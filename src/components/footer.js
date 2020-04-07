@@ -1,8 +1,6 @@
-import React from 'react'
-import { FaTwitter, FaGithub, FaMedium } from 'react-icons/fa'
-import { StaticQuery, graphql } from 'gatsby'
-import './style.scss'
-import Emoji from './emoji'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import './style.scss';
 
 const Footer = () => (
   <StaticQuery
@@ -20,8 +18,8 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className='footer center has-background-light'>
-        <div className='content has-text-centered'>
+      <footer className='footer center has-background-grey-darker'>
+        {/* <div className='content has-text-centered'>
           <p className='is-size-4'>
             This website was handcrafted with plenty cups of{' '}
             <Emoji emoji='☕' />
@@ -57,7 +55,7 @@ const Footer = () => (
             by{' '}
             <a href='https://www.paypal.me/amanhimself/2'>Buying Me a Coffee</a>
           </p>
-        </div>
+        </div> */}
       </footer>
     )}
   />

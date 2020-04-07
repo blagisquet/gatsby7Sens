@@ -1,41 +1,47 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+
+import Logo from '../images/logo.png';
 
 import './style.scss';
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
 
-const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar">
-			<div className="container">
+import styled from 'styled-components';
+
+const Navbar = ({ className }) => (
+	<section className={className}>
+		<div className="hero-head">
+			<nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
-					<a
-						className="navbar-item"
-						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
+					<a className="navbar-item" href="">
+						<img src={Logo} alt="logo du studio" />
 					</a>
+					<label role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" htmlFor="nav-toggle-state" data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</label>
 				</div>
-				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end">
-						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-							>
-								<span className="icon">
-									<FaGithub size="fa-2x" />
-								</span>
-								<span>Download</span>
-							</a>
-						</span>
+				<input type="checkbox" id="nav-toggle-state" />
+				<div id="navbarBasicExample" className="navbar-menu has-background-grey-darker has-text-light">
+					<div className="navbar-start">
+						<a className="navbar-item">Accueil</a>
+						<a className="navbar-item">Le studio</a>
+						<a className="navbar-item">Médias</a>
+						<a className="navbar-item">Avis</a>
+						<a className="navbar-item">Nous trouver</a>
+						<a className="navbar-item">Contact</a>
 					</div>
 				</div>
-			</div>
-		</nav>
-	</div>
+			</nav>
+		</div>
+	</section>
 );
 
-export default Navbar;
+export default styled(Navbar)`
+	#nav-toggle-state {
+  	display: none;
+	}
+
+	#nav-toggle-state:checked ~ .navbar-menu {
+  	display: block;
+	}
+`;
