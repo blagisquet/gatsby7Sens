@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Hero from '../theme/Hero';
+import Hero from '../theme/hero';
 
 import './style.scss';
 
-const home = () => {
+const home = ({ stickyRef }) => {
   return (
   <Hero>
-    <section>
+    <section ref={stickyRef}>
       <h1>Studio Septième Sens</h1>
     </section>
   </Hero>
