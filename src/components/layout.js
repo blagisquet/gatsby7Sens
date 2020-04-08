@@ -4,6 +4,7 @@ import './style.scss';
 import Helmet from './helmet';
 import Header from './header';
 import Footer from './footer';
+import Services from './services';
 import Studio from './studio';
 
 const Layout = ({ children }) => {
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
 			<Helmet />
 			<Header />
 			<Studio />
+			<Services />
 			<Footer />
 		</Fragment>
 	);

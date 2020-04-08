@@ -25,12 +25,13 @@ const Navbar = ({ className, sticky }) => (
 					<input type="checkbox" id="nav-toggle-state" />
 					<div id="navbarBasicExample" className="navbar-menu has-background-grey-darker">
 						<div className="navbar-start">
-							<a className="navbar-item">Accueil</a>
-							<a className="navbar-item">Le studio</a>
-							<a className="navbar-item">Médias</a>
-							<a className="navbar-item">Avis</a>
-							<a className="navbar-item">Nous trouver</a>
-							<a className="navbar-item">Contact</a>
+							<Link to="#" className="navbar-item">Accueil</Link>
+							<Link to="#studio" className="navbar-item">Le studio</Link>
+							<Link to="#services" className="navbar-item">Les services</Link>
+							<Link to="#medias" className="navbar-item">Médias</Link>
+							<Link to="#avis" className="navbar-item">Avis</Link>
+							<Link to="#map" className="navbar-item">Nous trouver</Link>
+							<Link to="#contact" className="navbar-item">Contact</Link>
 						</div>
 					</div>
 				</nav>
