@@ -2,18 +2,23 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import styled from 'styled-components';
-
 import './style.scss';
+
+import { pxToRem } from '../theme/helpers';
+
+import logo from '../images/logo.png';
 
 const Footer = ({ className }) => {
   return (
     <div className={className}>
-      <div className="columns has-background-grey-darker has-text-light">
+      <div className="columns is-mobile has-background-grey-darker has-text-light">
         <div className="column">
-          <img></img>
-          <p>10 rue Pérard</p>
-          <p>36000 Châteauroux</p>
-          <p>SIRET 1253468574878695456</p>
+          <img src={logo} alt="logo studio septième sens" />
+          <div className="address">
+            <p>10 rue Pérard</p>
+            <p>36000 Châteauroux</p>
+            <p>SIRET 1253468574878695456</p>
+          </div>
         </div>
         <div className="menu column">
           <ul className="menu-list">
@@ -38,5 +43,8 @@ export default styled(Footer)`
 			background-color: hsl(0, 0%, 21%);
 			color: #C80036;
 		}
+  }
+  .address {
+    margin-left: ${pxToRem(15)};
   }
 `;

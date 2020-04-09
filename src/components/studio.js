@@ -54,7 +54,7 @@ export default styled(Studio)`
   }
   .image {
     /* background: url(${mix}) center center no-repeat !important; */
-    background: url(${mix}) center center no-repeat;
+    background: url(${mix}) center/cover no-repeat;
   }
   .container {
     margin-top: 250px;
