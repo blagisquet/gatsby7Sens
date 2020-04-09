@@ -8,7 +8,7 @@ const Services = ({ className }) => {
   return (
     <div className={className} id="services">
       <h2 className="is-size-2 has-text-centered">Les services</h2>
-      <div className="colums">
+      <div className="columns has-text-centered">
         <div className="column">
           <img></img>
           <p>Enregistrement</p>
