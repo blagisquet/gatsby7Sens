@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import './style.scss';
 
 import record from '../images/mic.svg';
-import mastering from '../images/equalizer.svg';
-import mix from '../images/amplifier.svg';
+import mix from '../images/equalizer.svg';
+import mastering from '../images/amplifier.svg';
 import rapper from '../images/rapper.svg';
 import { pxToRem } from '../theme/helpers';
 
@@ -48,7 +48,7 @@ const Services = ({ className }) => {
         </div>
         <div className="column">
           <img src={rapper} alt="rap" />
-          <p className="is-size-4 has-text-weight-semibold">Forfait Rap</p>
+          <p className="is-size-4 has-text-weight-semibold">Forfait Rap / Cover</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">instru stéréo : 170€/titre <br />
           instru multipiste : 200€/titre</p>

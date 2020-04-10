@@ -12,7 +12,7 @@ const Materiel = ({ className }) => {
       <div className="columns has-text-centered">
         <div className="column is-one-quarter">
         <ul>
-          <li className="has-text-weight-semibold is-size-4">Console/Preamps</li>
+          <li className="has-text-weight-semibold is-size-4">Console / Preamps</li>
           <li>DDA QII 32 in</li>
           <li>Universal audio Apollo Twin</li>
         </ul>
