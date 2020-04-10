@@ -12,7 +12,7 @@ const Footer = ({ className }) => {
   return (
     <div className={className}>
       <div className="columns is-mobile has-background-grey-darker has-text-light">
-        <div className="column">
+        <div className="column is-two-thirds">
           <img src={logo} alt="logo studio septième sens" />
           <div className="address">
             <p>10 rue Pérard</p>
@@ -20,7 +20,7 @@ const Footer = ({ className }) => {
             <p>SIRET 1253468574878695456</p>
           </div>
         </div>
-        <div className="menu column">
+        <div className="menu column is-one-third">
           <ul className="menu-list">
             <Link to="#" className="menuLink"><li>Accueil</li></Link>
             <Link to="#studio" className="menuLink"><li>Le studio</li></Link>
