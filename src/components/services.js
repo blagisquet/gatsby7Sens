@@ -6,6 +6,7 @@ import './style.scss';
 import record from '../images/mic.svg';
 import mastering from '../images/equalizer.svg';
 import mix from '../images/amplifier.svg';
+import rapper from '../images/rapper.svg';
 import { pxToRem } from '../theme/helpers';
 
 
@@ -43,6 +44,15 @@ const Services = ({ className }) => {
             <p>Cette dernière étape cruciale fait entrer vos productions dans les normes d’écoute et de diffusion,
             pour une sortie digitale ou en vue d’une fixation sur un support.</p>
             <p>Possibilité de e-mastering (à distance).</p>
+          </div>
+        </div>
+        <div className="column">
+          <img src={rapper} alt="rap" />
+          <p className="is-size-4 has-text-weight-semibold">Forfait Rap</p>
+          <div className="is-size-5">
+            <p className="has-text-weight-bold">instru stéréo : 170€/titre <br />
+          instru multipiste : 200€/titre</p>
+            <p>L'artiste apporte le fichier instrumental sur clé USB au format .wav.</p>
           </div>
         </div>
         <p></p>
