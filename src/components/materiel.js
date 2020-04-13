@@ -63,13 +63,13 @@ const Materiel = ({ className }) => {
 }
 
 export default styled(Materiel)`
-  h2 {
-    margin-top: ${pxToRem(24)};
-  }
   ul {
-    margin-top: ${pxToRem(16)};
+    margin-top: ${pxToRem(20)};
   }
   li {
     font-size: 1.25rem;
+  }
+  h2 {
+    margin-top: ${pxToRem(48)};
   }
 `;

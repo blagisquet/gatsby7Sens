@@ -20,9 +20,10 @@ const Services = ({ className }) => {
           <img src={record} alt="enregistrement" />
           <p className="is-size-4 has-text-weight-semibold">Enregistrement</p>
           <div className="is-size-5">
-            <p className="has-text-weight-bold">à partir de 30€/h</p>
-            <p>½ journée (4h) : 120€</p>
-            <p>1 journée (8h) : 200€</p>
+            <p className="has-text-weight-bold">à partir de 30€/h<br />
+              ½ journée (4h) : 120€<br />
+              1 journée (8h) : 200€<br />
+            </p>
             <p>Re-recording (instrument par instrument) ou live (par sections d’instruments)</p>
           </div>
         </div>
@@ -67,5 +68,8 @@ export default styled(Services)`
   }
   .services {
     margin-top: ${pxToRem(20)};
+  }
+  h2 {
+    margin-top: ${pxToRem(48)};
   }
 `;

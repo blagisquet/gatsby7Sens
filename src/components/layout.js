@@ -5,6 +5,7 @@ import Helmet from './helmet';
 import Header from './header';
 import Footer from './footer';
 import Materiel from './materiel';
+import Medias from './medias';
 import Services from './services';
 import Studio from './studio';
 
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
 			<Studio />
 			<Services />
 			<Materiel />
+			<Medias />
 			<Footer />
 		</Fragment>
 	);
