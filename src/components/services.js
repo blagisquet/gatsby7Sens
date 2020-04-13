@@ -14,7 +14,7 @@ import { pxToRem } from '../theme/helpers';
 const Services = ({ className }) => {
   return (
     <div className={className} id="services">
-      <h2 className="is-size-2 has-text-centered">Les services</h2>
+      <h2 className="is-size-2 has-text-centered has-text-weight-bold">Les services</h2>
       <div className="columns has-text-centered services">
         <div className="column">
           <img src={record} alt="enregistrement" />

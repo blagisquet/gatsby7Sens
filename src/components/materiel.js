@@ -8,7 +8,7 @@ import { pxToRem } from '../theme/helpers';
 const Materiel = ({ className }) => {
   return (
     <div className={className}>
-      <h2 className="is-size-2 has-text-centered">Matériel</h2>
+      <h2 className="is-size-2 has-text-centered has-text-weight-bold">Matériel</h2>
       <div className="columns has-text-centered">
         <div className="column is-one-quarter">
         <ul>

@@ -10,7 +10,7 @@ const Studio = ({ className }) => {
   return (
     <div className={className}>
       <section id="studio">
-        <h2 className="is-size-2 has-text-centered">Le studio</h2>
+        <h2 className="is-size-2 has-text-centered has-text-weight-bold">Le studio</h2>
         <div className="text is-size-5 has-text-justified">
           <p>
             Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
@@ -53,7 +53,7 @@ export default styled(Studio)`
     background: url(${mix}) center/cover no-repeat;
   }
   .container {
-    margin-top: 250px;
+    margin-top: ${pxToRem(250)};
   }
   .hero {
     margin-top: ${pxToRem(48)};
