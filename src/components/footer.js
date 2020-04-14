@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import './style.scss';
 
-import { pxToRem } from '../theme/helpers';
+import { colors, pxToRem } from '../theme/helpers';
 
 import logo from '../images/logo.png';
 
@@ -43,7 +43,7 @@ export default styled(Footer)`
     color: white;
 		&:hover {
 			background-color: hsl(0, 0%, 21%);
-			color: #C80036;
+			color: ${colors.primary};
 		}
   }
   .address {

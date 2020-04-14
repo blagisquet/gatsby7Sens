@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
 
 import Home from './home';
 import Navbar from './navbar';
 
 import './style.scss';
 
-const Header = ({ className }) => {
+const Header = () => {
 	useEffect(() => {
 		return () => {
 			window.removeEventListener("scroll", () => handleScroll)
@@ -47,6 +46,4 @@ const Header = ({ className }) => {
 		</section>
 	);
 }
-export default styled(Header)`
-
-`;
+export default Header;

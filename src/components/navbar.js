@@ -5,6 +5,8 @@ import Logo from '../images/logo.png';
 
 import './style.scss';
 
+import { colors } from '../theme/helpers';
+
 import styled from 'styled-components';
 
 const Navbar = ({ className, sticky }) => (
@@ -63,7 +65,7 @@ export default styled(Navbar)`
 		color: white;
 		&:hover {
 			background-color: hsl(0, 0%, 21%);
-			color: #C80036;
+			color: ${colors.primary};
 		}
 	}
 	
