@@ -13,7 +13,7 @@ const Footer = ({ className }) => {
     <div className={className}>
       <div className="columns is-mobile has-background-grey-darker has-text-light">
         <div className="column is-two-thirds">
-          <figure className="image is-rounded">
+          <figure className="image">
             <img src={logo} alt="logo studio septième sens" />
           </figure>
           <div className="address">

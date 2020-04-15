@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Layout from '../components/layout';
+import GlobalStyle from '../theme/globalStyle';
 import ThemeButton from '../theme/themeButton';
 import { lightTheme, darkTheme } from '../theme/themes';
 
@@ -16,6 +17,7 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <ThemeButton handleTheme={handleTheme} />
+      <GlobalStyle />
       <Layout />
     </ThemeProvider>
   )

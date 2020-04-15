@@ -9,9 +9,9 @@ import { colors } from '../theme/helpers';
 
 import styled from 'styled-components';
 
-const Navbar = ({ className, sticky }) => (
+const Navbar = ({ className }) => (
 	<Fragment>
-		<div className={sticky ? "navbar navbar-sticky" : "navbar"}>
+		<div>
 			<section className={className}>
 				<div className="hero-head">
 					<nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">

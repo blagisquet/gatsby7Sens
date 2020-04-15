@@ -4,10 +4,10 @@ import Hero from '../theme/hero';
 
 import './style.scss';
 
-const home = ({ stickyRef }) => {
+const home = () => {
   return (
   <Hero>
-    <section ref={stickyRef}>
+    <section>
       <h1 className="is-invisible">Studio Septième Sens</h1>
     </section>
   </Hero>

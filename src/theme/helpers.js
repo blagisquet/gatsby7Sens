@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 export const colors = {
   primary: '#C80036', //rouge studio
   accent: '#ff4a00',
-  white: '#f1f4f5',
+  white: '#ffffff',
   black: '#20272b',
   grey: '#354147',
   lightGrey: '#969ea2'
