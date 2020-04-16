@@ -2,7 +2,18 @@
 @import '~bulma/bulma.sass';
 
 //Font
-
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
 
 
 // .center {
@@ -23,45 +34,3 @@
 // 		color: $secondary-color;
 // 	}
 // }
-
-.twisted,
-.twisted-white,
-.twisted-black {
-  padding: 0 !important;
-}
-
-.hero-body .twisted .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.twisted,
-.twisted-black {
-	&::before {
-		margin-top: -1px;
-		margin-bottom: -1px;
-		height: 126px;
-		display: block;
-		content: "";
-		background-color: black;
-		-webkit-mask-image: url("../images/twistLeft.svg");
-		mask-image: url("../images/twistLeft.svg");
-		// background-image: url("../images/twistLeft.svg");
-		background-size: 100% 126px;
-	}
-}
-.twisted,
-.twisted-black {
-	&::after {
-		margin-top: 150px;
-		margin-bottom: -1px;
-		height: 126px;
-		display: block;
-		content: "";
-		background-color: black;
-		-webkit-mask-image: url("../images/twistRight.svg");
-		mask-image: url("../images/twistRight.svg");
-		// background-image: url("../images/twistRight.svg");
-		background-size: 100% 126px;
-	}
-}

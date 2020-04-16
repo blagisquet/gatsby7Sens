@@ -19,6 +19,16 @@ const Twisted = ({ className, theme }) => {
 }
 
 export default styled(Twisted)`
+.twisted,
+.twisted-white,
+.twisted-black {
+  padding: 0 !important;
+}
+
+.hero-body .twisted .container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
   .twisted,
   .twisted-black {
     &::before {
