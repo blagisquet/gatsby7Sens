@@ -8,16 +8,12 @@ import styled from 'styled-components';
 import loulou from '../images/loulou2.jpg';
 
 import { pxToRem } from '../theme/helpers';
+import Twisted from '../theme/twisted';
 
 const Medias = ({ className }) => {
   return (
     <div className={className}>
-      <section className="hero image">
-        <div className="hero-body twisted">
-          <div className="container has-text-centered">
-          </div>
-        </div>
-      </section>
+      <Twisted />
       <section>
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Médias</h2>
         {/* Desktop */}

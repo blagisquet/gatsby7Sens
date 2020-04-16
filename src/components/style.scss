@@ -25,8 +25,8 @@
 // }
 
 .twisted,
-.twisted-bottom,
-.twisted-top {
+.twisted-white,
+.twisted-black {
   padding: 0 !important;
 }
 
@@ -36,26 +36,32 @@
 }
 
 .twisted,
-.twisted-top {
+.twisted-black {
 	&::before {
 		margin-top: -1px;
 		margin-bottom: -1px;
 		height: 126px;
 		display: block;
 		content: "";
-		background-image: url("../images/twistLeft.svg");
+		background-color: black;
+		-webkit-mask-image: url("../images/twistLeft.svg");
+		mask-image: url("../images/twistLeft.svg");
+		// background-image: url("../images/twistLeft.svg");
 		background-size: 100% 126px;
 	}
 }
 .twisted,
-.twisted-bottom {
+.twisted-black {
 	&::after {
 		margin-top: 150px;
 		margin-bottom: -1px;
 		height: 126px;
 		display: block;
 		content: "";
-		background-image: url("../images/twistRight.svg");
+		background-color: black;
+		-webkit-mask-image: url("../images/twistRight.svg");
+		mask-image: url("../images/twistRight.svg");
+		// background-image: url("../images/twistRight.svg");
 		background-size: 100% 126px;
 	}
 }

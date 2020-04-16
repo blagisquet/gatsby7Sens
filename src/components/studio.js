@@ -2,11 +2,13 @@ import React from 'react';
 import { pxToRem } from '../theme/helpers';
 import styled from 'styled-components';
 
+import Twisted from '../theme/twisted';
+
 import mix from '../images/mix2.jpg';
 
 import './style.scss';
 
-const Studio = ({ className }) => {
+const Studio = ({ className, theme }) => {
   return (
     <div className={className}>
       <section id="studio">
@@ -29,14 +31,7 @@ const Studio = ({ className }) => {
             </p>
         </div>
       </section>
-      <section className="hero image">
-        <div className="hero-body twisted">
-          <div className="container has-text-centered">
-            {/* <p className="title is-2 has-text-centered"></p>
-              <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
-          </div>
-        </div>
-      </section>
+      <Twisted />
     </div>
   );
 };
@@ -49,7 +44,6 @@ export default styled(Studio)`
     margin: 1rem 1rem;
   }
   .image {
-    /* background: url(${mix}) center center no-repeat !important; */
     background: url(${mix}) center/cover no-repeat;
   }
   .container {

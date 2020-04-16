@@ -10,7 +10,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   name: 'dark',
-  backgroundColor: darken(0.5, colors.black),
+  backgroundColor: colors.greyDarker,
   frontColor: colors.white,
   titleColor: colors.primary 
 }
