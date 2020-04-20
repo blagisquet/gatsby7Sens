@@ -4,6 +4,7 @@ import './style.scss';
 
 import Helmet from './helmet';
 import Header from './header';
+import FindUs from './findUs';
 import Footer from './footer';
 import Materiel from './materiel';
 import Medias from './medias';
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
 			<Services />
 			<Materiel />
 			<Medias />
+			<FindUs />
 			<Footer />
 		</Fragment>
 	);

@@ -8,7 +8,7 @@ import mix from '../images/mix2.jpg';
 
 import './style.scss';
 
-const Studio = ({ className, theme }) => {
+const Studio = ({ className }) => {
   return (
     <div className={className}>
       <section id="studio">

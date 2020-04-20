@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import loulou from '../images/loulou2.jpg';
 
-import { pxToRem } from '../theme/helpers';
+import { colors, pxToRem } from '../theme/helpers';
 import Twisted from '../theme/twisted';
 
 const Medias = ({ className }) => {
@@ -71,7 +71,7 @@ export default styled(Medias)`
     margin-top: ${pxToRem(48)};
     margin-bottom: ${pxToRem(24)}
   }
-   .image {
+  .image {
     background: url(${loulou}) center/cover no-repeat;
   }
   .container {
@@ -80,7 +80,7 @@ export default styled(Medias)`
   .hero {
     margin-top: ${pxToRem(48)};
   }
-  li:hover {
-		color: #C80036;
+  span:hover, span:active {
+		color: ${colors.primary};
   }
 `;
