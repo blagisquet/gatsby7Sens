@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
-
 import { colors } from '../theme/helpers';
 
 import map from '../images/map.png';
@@ -21,7 +19,7 @@ const FindUs = ({ className }) => {
 }
 
 export default styled(FindUs)`
-  a:hover {
-    color: ${colors.grey}
+  img:hover {
+    opacity: 0.5;
   }
 `;
