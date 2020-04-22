@@ -6,8 +6,8 @@ const Twisted = ({ className, theme }) => {
   return (
     <div className={className}>
       <section className="hero image">
-        <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}>
-          {/* <div className="hero-body twisted"> */}
+        {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
+          <div className="hero-body twisted-black">
           <div className="container has-text-centered">
             {/* <p className="title is-2 has-text-centered"></p>
               <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}

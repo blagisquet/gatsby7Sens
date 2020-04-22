@@ -71,5 +71,6 @@ export default styled(Materiel)`
   }
   h2 {
     margin-top: ${pxToRem(48)};
+    margin-bottom: ${pxToRem(24)}
   }
 `;

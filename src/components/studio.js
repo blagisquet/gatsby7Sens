@@ -39,6 +39,7 @@ const Studio = ({ className }) => {
 export default styled(Studio)`
   h2 {
     margin-top: ${pxToRem(48)};
+    margin-bottom: ${pxToRem(24)}
   }
   .text {
     margin: 1rem 1rem;

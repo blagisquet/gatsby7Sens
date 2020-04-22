@@ -21,7 +21,7 @@ const Medias = ({ className }) => {
           <ul>
             <li>
               <a>
-                <span className="icon is-small"><i className="fas fa-music" aria-hidden="true"></i></span>
+                <span className="icon"><i className="fas fa-music"></i></span>
                 <span className="is-size-4">Artistes</span>
               </a>
             </li>
