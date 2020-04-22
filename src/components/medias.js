@@ -20,31 +20,31 @@ const Medias = ({ className }) => {
         <div className="tabs is-centered is-hidden-mobile">
           <ul>
             <li>
-              <a>
+              <Link to="/music" exact="true" activeClassName="active">
                 <span className="icon"><i className="fas fa-music"></i></span>
                 <span className="is-size-4">Artistes</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="/photo" exact="true" activeClassName="active">
                 <span className="icon is-small"><i className="fas fa-image" aria-hidden="true"></i></span>
                 <span className="is-size-4">Studio</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="/prod" exact="true" activeClassName="active">
                 <span className="icon is-small"><i className="fas fa-play-circle" aria-hidden="true"></i></span>
                 <span className="is-size-4">Productions</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         {/* Mobile */}
-        <div className="dropdown is-hidden-tablet is-fullwidth-mobile">
+        <div className="dropdown is-hidden-tablet is-fullwidth">
           <div className="drowdown-trigger">
-            <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <button className="button is-fullwidth" aria-haspopup="true" aria-controls="dropdown-menu">
               <span>Médias</span>
-              <span className="icon is-small">
+              <span className="icon has-text-info">
                 <i className="fas fa-angle-down" aria-hidden="true"></i>
               </span>
             </button>

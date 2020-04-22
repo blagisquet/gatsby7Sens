@@ -1,6 +1,11 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
 //Font
 @font-face {
   font-family: 'Roboto';

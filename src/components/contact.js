@@ -10,8 +10,18 @@ const Contact = ({ className }) => {
   return (
     <div className={className}>
       <h2 className="is-size-2 has-text-centered has-text-weight-bold">Contact</h2>
-      <button className="button btn is-fullwidth"><a href="tel:+33658400008">06 58 40 00 08</a></button>
-      <button className="button btn is-fullwidth"><a href="mailto:b.lagisquet@gmail.com">b.lagisquet@gmail.com</a></button>
+      <button className="button btn is-fullwidth has-icons-left">
+        <span className="icon is-left">
+          <i className="fas fa-phone-alt"></i>
+        </span>
+        <a href="tel:+33658400008">06 58 40 00 08</a>
+      </button>
+      <button className="button btn is-fullwidth has-icons-left">
+        <span className="icon is-left">
+          <i className="fas fa-envelope"></i>
+        </span>
+        <a href="mailto:b.lagisquet@gmail.com">b.lagisquet@gmail.com</a>
+        </button>
       <form method="post" action="https://formspree.io/xjvenvnj">
         <div className="field">
           <label className="label" for="name">Prénom / Nom</label>
@@ -59,7 +69,7 @@ export default styled(Contact)`
     margin-bottom: ${pxToRem(100)};
   }
   a {
-    text-decoration: none;
+    color: black;
   }
   .btn {
     margin-bottom: ${pxToRem(12)};
