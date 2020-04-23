@@ -49,4 +49,7 @@ export default styled(Footer)`
   .address {
     margin-left: ${pxToRem(15)};
   }
+  img {
+    width: 50%;
+  }
 `;
