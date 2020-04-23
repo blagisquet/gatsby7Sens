@@ -8,7 +8,7 @@ import ThemeButton from '../theme/themeButton';
 import { lightTheme, darkTheme } from '../theme/themes';
 
 const IndexPage = () => {
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
 
   const handleTheme = () => {
     theme.name === 'light' ? setTheme(darkTheme) : setTheme(lightTheme)

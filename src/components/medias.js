@@ -11,6 +11,17 @@ import { colors, pxToRem } from '../theme/helpers';
 import Twisted from '../theme/twisted';
 
 const Medias = ({ className }) => {
+  function changeTab(value) {
+    var tabs = document.getElementsByClassName("tabs");
+
+    var i;
+    for (i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = "none";
+    }
+
+    document.getElementById("tab_" + value).style.display = "block";
+  }
+
   return (
     <div className={className}>
       <Twisted />
@@ -21,7 +32,7 @@ const Medias = ({ className }) => {
           <ul>
             <li>
               <Link to="/music" exact="true" activeClassName="active">
-                <span className="icon"><i className="fas fa-music"></i></span>
+                <span className="icon"><i className="fas fa-music" aria-hidden="true"></i></span>
                 <span className="is-size-4">Artistes</span>
               </Link>
             </li>
@@ -40,7 +51,7 @@ const Medias = ({ className }) => {
           </ul>
         </div>
         {/* Mobile */}
-        <div className="dropdown is-hidden-tablet is-fullwidth">
+        {/* <div className="dropdown is-hidden-tablet is-fullwidth">
           <div className="drowdown-trigger">
             <button className="button is-fullwidth" aria-haspopup="true" aria-controls="dropdown-menu">
               <span>Médias</span>
@@ -60,7 +71,15 @@ const Medias = ({ className }) => {
               <Link to="#prod" className="dropdown-item">Productions</Link>
             </div>
           </div>
-        </div>
+        </div> */}
+        <select id="sel" className="dropdown is-hidden-tablet is-fullwidth" onChange="changeTab(this.value)">
+          <option value="1">Artistes</option>
+          <option value="2">Studio</option>
+          <option value="3">Productions</option>
+        </select>
+        <div class="tabs" id="tab_1" style={{background:'#ddd',width:'100%',height:'500px',display:'none'}}>First Tab</div>
+        <div class="tabs" id="tab_2" style={{background:'#ddd',width:'100%',height:'500px',display:'none'}}>Second Tab</div>
+        <div class="tabs" id="tab_3" style={{background:'#ddd',width:'100%',height:'500px',display:'none'}}>Third Tab</div>
       </section>
     </div>
   );

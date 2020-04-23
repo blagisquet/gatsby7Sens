@@ -14,7 +14,7 @@ const Navbar = ({ className }) => (
 		<div>
 			<section className={className}>
 				<div className="hero-head">
-					<nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
+					<nav className="navbar has-background-grey-darker is-fixed-top" role="navigation" aria-label="main navigation">
 						<div className="navbar-brand">
 							<Link to="#" className="navbar-item">
 								<img src={Logo} alt="logo du studio" />
