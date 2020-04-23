@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import home from '../images/accueil.jpg';
+import home from '../images/loulou2.jpg';
 
 const Hero = styled.div`
   min-height: 100vh;
