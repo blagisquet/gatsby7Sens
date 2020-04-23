@@ -12,7 +12,7 @@ const Contact = ({ className }) => {
       <div className="contact container is-fluid">
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Contact</h2>
         <div className="columns is-vcentered">
-          <div className="column is-5 is-offset-1">
+          <div className="column is-5">
             <div className="columns is-vcentered">
               <div className="column is-4-widescreen is-3-desktop is-hidden-touch">
                 <h4 className="title is-4">Tél<span className="is-hidden-widescreen">.</span><span className="is-hidden-desktop-only">éphone</span></h4>
@@ -24,7 +24,7 @@ const Contact = ({ className }) => {
               </div>
             </div>
           </div>
-          <div className="column is-5">
+          <div className="column is-offset-1 is-5">
             <div className="columns is-vcentered">
               <div className="column is-4-widescreen is-3-destkop is-one-third is-hidden-touch">
                 <h4 className="title is-4">Email</h4>
