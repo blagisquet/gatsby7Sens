@@ -21,21 +21,43 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 }
 
 
-// .center {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// }
+.twisted,
+.twisted-white,
+.twisted-black {
+  padding: 0 !important;
+}
 
-// .footer {
-// 	display: flex;
-// 	padding: 1.5rem 1.5rem;
-// 	line-height: 1.5rem;
-// 	a {
-// 		border-bottom: 1px solid;
-// 		color: black;
-// 	}
-// 	a:hover {
-// 		color: $secondary-color;
-// 	}
-// }
+.hero-body .twisted .container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+  .twisted,
+  .twisted-black {
+    &::before {
+      margin-top: -1px;
+      margin-bottom: -1px;
+      height: 126px;
+      display: block;
+      content: "";
+      // background-color: black;
+      // -webkit-mask-image: url("../images/twistLeft.svg");
+      // mask-image: url("../images/twistLeft.svg");
+      background-image: url("../images/twistLeft.svg");
+      background-size: 100% 126px;
+    }
+  }
+  .twisted,
+  .twisted-black {
+    &::after {
+      margin-top: 150px;
+      margin-bottom: -1px;
+      height: 126px;
+      display: block;
+      content: "";
+      // background-color: black;
+      // -webkit-mask-image: url("../images/twistRight.svg");
+      // mask-image: url("../images/twistRight.svg");
+      background-image: url("../images/twistRight.svg");
+      background-size: 100% 126px;
+    }
+  }
