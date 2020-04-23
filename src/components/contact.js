@@ -32,40 +32,46 @@ const Contact = ({ className }) => {
               <div className="column has-text-right">
                 <button className="button btn is-danger is-outlined is-fullwidth" href="mailto:b.lagisquet@gmail.com">
                   <span className="icon is-medium ">
-                  <i className="icons fas fa-envelope"></i>
-                </span>b.lagisquet@gmail.com</button>
+                    <i className="icons fas fa-envelope"></i>
+                  </span>b.lagisquet@gmail.com</button>
               </div>
             </div>
           </div>
         </div>
         <form method="post" action="https://formspree.io/xjvenvnj">
-          <div className="field">
-            <label className="label" for="name">Prénom / Nom</label>
-            <div className="control has-icons-left">
-              <input className="input" type="text" name="name" />
-              <span className="icon is-small is-left">
-                <i className="fas fa-user"></i>
-              </span>
+          <div className="columns">
+            <div className="column is-half">
+              <div className="field">
+                <label className="label" for="name">Prénom / Nom</label>
+                <div className="control has-icons-left">
+                  <input className="input" type="text" name="name" />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div className="field">
+                <label className="label" for="email">Email</label>
+                <div className="control has-icons-left">
+                  <input className="input" type="email" name="_replyto" />
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="field">
-            <label className="label" for="email">Email</label>
-            <div className="control has-icons-left">
-              <input className="input" type="email" name="_replyto" />
-              <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-          <div className="field">
-            <label className="label">Message</label>
-            <div className="control">
-              <textarea className="textarea" name="message"></textarea>
-            </div>
-          </div>
-          <div className="field is-pulled-right">
-            <div className="control">
-              <button className="button is-link is-success">Envoyer</button>
+            <div className="column">
+              <div className="field">
+                <label className="label">Message</label>
+                <div className="control">
+                  <textarea className="textarea" name="message"></textarea>
+                </div>
+              </div>
+              <div className="field is-pulled-right">
+                <div className="control">
+                  <button className="button is-link is-success envoyer">Envoyer</button>
+                </div>
+              </div>
             </div>
           </div>
         </form>
@@ -90,6 +96,9 @@ export default styled(Contact)`
   }
   .icons {
     margin-right: 2rem;
+  }
+  .envoyer {
+    width: 20rem;
   }
   /* .btn {
     margin-bottom: ${pxToRem(24)};

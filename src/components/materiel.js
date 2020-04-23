@@ -12,19 +12,19 @@ const Materiel = ({ className }) => {
       <div className="columns has-text-centered">
         <div className="column is-one-quarter">
         <ul>
-          <li className="has-text-weight-semibold is-size-4">Console / Preamps</li>
+          <li className="mat has-text-weight-semibold is-size-4">Console / Preamps</li>
           <li>DDA QII 32 in</li>
           <li>Universal audio Apollo Twin</li>
         </ul>
         <ul>
-          <li className="has-text-weight-semibold is-size-4">Monitoring</li>
+          <li className="mat has-text-weight-semibold is-size-4">Monitoring</li>
           <li>Focal SM9</li>
           <li>Yamaha HS8</li>
           <li>Casque Beyerdynamic DT770 pro(x3)</li>
         </ul>
         </div>
         <ul className="column is-one-quarter">
-          <li className="has-text-weight-semibold is-size-4">Logiciel / Plug-in</li>
+          <li className="mat has-text-weight-semibold is-size-4">Logiciel / Plug-in</li>
           <li>Pro Tools Ultimate 2020</li>
           <li>Logic Pro X</li>
           <li>Ableton Live</li>
@@ -36,7 +36,7 @@ const Materiel = ({ className }) => {
           <li>Antares Autotune pro</li>
         </ul>
         <ul className="column is-one-quarter">
-          <li className="has-text-weight-semibold is-size-4">Convertisseurs / Workflow</li>
+          <li className="mat has-text-weight-semibold is-size-4">Convertisseurs / Workflow</li>
           <li>Avid Pro Tools HDX 16x16 system</li>
           <li>Apple Mac Pro 2014</li>
           <li>Hexacoeur à 3,5Ghz avec 12Mo de cache N3</li>
@@ -45,7 +45,7 @@ const Materiel = ({ className }) => {
           <li>Magma châssis Thunderbolt ExpressBox 3T</li>
         </ul>
         <ul className="column is-one-quarter">
-          <li className="has-text-weight-semibold is-size-4">Micros</li>
+          <li className="mat has-text-weight-semibold is-size-4">Micros</li>
           <li>Brauner Phantera</li>
           <li>Neumann KM184(x2)</li>
           <li>Rode NT5(x2)</li>
@@ -72,5 +72,8 @@ export default styled(Materiel)`
   h2 {
     margin-top: ${pxToRem(48)};
     margin-bottom: ${pxToRem(24)}
+  }
+  .mat {
+    margin-bottom: ${pxToRem(12)};
   }
 `;
