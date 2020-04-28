@@ -48,7 +48,8 @@ const Medias = ({ className }) => {
         </Tabs>
         <div className="is-hidden-mobile">
           <Content active={active === 0}>
-            <h1>Content 1</h1>
+            <div>
+            </div>
           </Content>
           <Content active={active === 1}>
             <h1>Content 2</h1>
@@ -57,50 +58,6 @@ const Medias = ({ className }) => {
           <iframe style={{border: 0, width: '700px', height: '300px', marginTop: '3rem'}} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
           </Content>
         </div>
-        {/* <div className="tabs is-centered is-hidden-mobile">
-          <ul>
-            <li>
-              <Link to="/music" exact="true" activeClassName="active">
-                <span className="icon"><i className="fas fa-music" aria-hidden="true"></i></span>
-                <span className="is-size-4">Artistes</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/photo" exact="true" activeClassName="active">
-                <span className="icon is-small"><i className="fas fa-image" aria-hidden="true"></i></span>
-                <span className="is-size-4">Studio</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/prod" exact="true" activeClassName="active">
-                <span className="icon is-small"><i className="fas fa-play-circle" aria-hidden="true"></i></span>
-                <span className="is-size-4">Productions</span>
-              </Link>
-            </li>
-          </ul>
-        </div> */}
-        {/* Mobile */}
-        {/* <div className="dropdown is-hidden-tablet is-fullwidth">
-          <div className="drowdown-trigger">
-            <button className="button is-fullwidth" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>Médias</span>
-              <span className="icon has-text-info">
-                <i className="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div className="dropdown-menu" id="dropdown-menu" role="menu">
-            <div className="dropdown-content">
-              <Link to="#artistes" className="dropdown-item">Artistes</Link>
-            </div>
-            <div className="dropdown-content">
-              <Link to="#studio" className="dropdown-item">Studio</Link>
-            </div>
-            <div className="dropdown-content">
-              <Link to="#prod" className="dropdown-item">Productions</Link>
-            </div>
-          </div>
-        </div> */}
         <select id="sel" className="dropdown is-hidden-tablet is-fullwidth" onChange="changeTab(this.value)">
           <option value="1">Artistes</option>
           <option value="2">Studio</option>
