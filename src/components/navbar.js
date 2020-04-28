@@ -17,7 +17,7 @@ const Navbar = ({ className }) => (
 					<nav className="navbar has-background-grey-darker is-fixed-top" role="navigation" aria-label="main navigation">
 						<div className="navbar-brand">
 							<Link to="#" className="navbar-item">
-								<img src={Logo} className="image is-128x128 is-2by1" alt="logo du studio" />
+								<img src={Logo} className="image" alt="logo du studio" />
 							</Link>
 							<label role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" htmlFor="nav-toggle-state" data-target="navbarBasicExample">
 								<span aria-hidden="true"></span>
@@ -62,5 +62,9 @@ export default styled(Navbar)`
 			background-color: hsl(0, 0%, 21%);
 			color: ${colors.primary};
 		}
+	}
+
+	.image {
+		width: 20%;
 	}
 `;
