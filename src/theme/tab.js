@@ -17,7 +17,7 @@ export const Tab = styled.button`
 
   margin-right: 0.1em;
   font-size: 1em;
-  border-bottom: ${props => (props.active ? "none" : "")};
+  border-bottom: ${props => (props.active ? "2px solid #C80036" : "")};
   transition: background-color 0.5s ease-in-out;
 `;
 

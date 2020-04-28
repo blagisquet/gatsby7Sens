@@ -32,7 +32,7 @@ const Medias = ({ className }) => {
       <section>
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Médias</h2>
         {/* Desktop */}
-        <Tabs className="has-text-centered">
+        <Tabs className="has-text-centered is-hidden-mobile">
           <Tab className="tab" onClick={handleClick} active={active === 0} id={0}>
             <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
             <span className="is-size-4" onClick={handleClick} active={active === 0} id={0}>Artistes</span>
@@ -46,17 +46,17 @@ const Medias = ({ className }) => {
             <span className="is-size-4" active={active === 2} id={2}>Productions</span>
           </Tab>
         </Tabs>
-        <>
+        <div className="is-hidden-mobile">
           <Content active={active === 0}>
             <h1>Content 1</h1>
           </Content>
           <Content active={active === 1}>
             <h1>Content 2</h1>
           </Content>
-          <Content active={active === 2}>
-            <h1>Content 3</h1>
+          <Content className="has-text-centered" active={active === 2}>
+          <iframe style={{border: 0, width: '700px', height: '300px', marginTop: '3rem'}} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
           </Content>
-        </>
+        </div>
         {/* <div className="tabs is-centered is-hidden-mobile">
           <ul>
             <li>
@@ -130,6 +130,8 @@ export default styled(Medias)`
   }
   .tab:hover, .tab:active {
 		color: ${colors.primary};
-    border-bottom: 1px solid ${colors.primary};
+  }
+  .icon {
+    margin-right: 0.5rem;
   }
 `;
