@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { Link } from 'gatsby';
 
 import './style.scss';
 
@@ -8,7 +7,7 @@ import styled from 'styled-components';
 import loulou from '../images/loulou2.jpg';
 
 import { colors, pxToRem } from '../theme/helpers';
-import { Tabs, Tab, Content } from '../theme/tab';
+import { Tabs, Tab, TabMob, Content } from '../theme/tab';
 
 const Medias = ({ className }) => {
   const [active, setActive] = useState(0);
@@ -34,38 +33,54 @@ const Medias = ({ className }) => {
         {/* Desktop */}
         <Tabs className="has-text-centered is-hidden-mobile">
           <Tab className="tab" onClick={handleClick} active={active === 0} id={0}>
-            <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
+            <span className="icon 1"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
             <span className="is-size-4" onClick={handleClick} active={active === 0} id={0}>Artistes</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 1} id={1}>
-            <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active === 1} id={1}></i></span>
+            <span className="icon 1"><i className="fas fa-image" aria-hidden="true" active={active === 1} id={1}></i></span>
             <span className="is-size-4" active={active === 1} id={1}>Studio</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 2} id={2}>
-            <span className="icon"><i className="fas fa-play-circle" aria-hidden="true"  active={active === 2} id={2}></i></span>
+            <span className="icon 1"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
             <span className="is-size-4" active={active === 2} id={2}>Productions</span>
           </Tab>
         </Tabs>
-        <div className="is-hidden-mobile">
+        {/* Mobile */}
+        <Tabs className="is-hidden-tablet">
+          <TabMob className="tab tabsMob" onClick={handleClick} active={active === 0} id={0}>
+            <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
+            <span className="is-size-6" onClick={handleClick} active={active === 0} id={0}>Artistes</span>
+          </TabMob>
+          <TabMob className="tab tabsMob" onClick={handleClick} active={active === 1} id={1}>
+            <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active === 1} id={1}></i></span>
+            <span className="is-size-6" active={active === 1} id={1}>Studio</span>
+          </TabMob>
+          <TabMob className="tab tabsMob" onClick={handleClick} active={active === 2} id={2}>
+            <span className="icon"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
+            <span className="is-size-6" active={active === 2} id={2}>Prods</span>
+          </TabMob>
+        </Tabs>
+        {/* <div class="select">
+          <select className="is-hidden-tablet is-fullwidth-mobile">
+            <option onClick={handleClick} active={active === 3} id={3}>Artistes</option>
+            <option onClick={handleClick} active={active === 4} id={4}>Studio</option>
+            <option onClick={handleClick} active={active === 5} id={5}>Productions</option>
+          </select>
+        </div> */}
+        <div>
           <Content active={active === 0}>
             <div>
+              0
             </div>
           </Content>
           <Content active={active === 1}>
-            <h1>Content 2</h1>
+            1
           </Content>
           <Content className="has-text-centered" active={active === 2}>
-          <iframe style={{border: 0, width: '700px', height: '300px', marginTop: '3rem'}} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+            <iframe className="is-hidden-mobile" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>            
+            <iframe className="is-hidden-tablet" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
           </Content>
         </div>
-        <select id="sel" className="dropdown is-hidden-tablet is-fullwidth" onChange="changeTab(this.value)">
-          <option value="1">Artistes</option>
-          <option value="2">Studio</option>
-          <option value="3">Productions</option>
-        </select>
-        <div class="tabs" id="tab_1" style={{ background: '#ddd', width: '100%', height: '500px', display: 'none' }}>First Tab</div>
-        <div class="tabs" id="tab_2" style={{ background: '#ddd', width: '100%', height: '500px', display: 'none' }}>Second Tab</div>
-        <div class="tabs" id="tab_3" style={{ background: '#ddd', width: '100%', height: '500px', display: 'none' }}>Third Tab</div>
       </section>
     </div>
   );
@@ -88,7 +103,7 @@ export default styled(Medias)`
   .tab:hover, .tab:active {
 		color: ${colors.primary};
   }
-  .icon {
+  .1 {
     margin-right: 0.5rem;
   }
 `;
