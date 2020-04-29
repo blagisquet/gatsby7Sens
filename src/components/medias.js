@@ -77,8 +77,8 @@ const Medias = ({ className }) => {
             1
           </Content>
           <Content className="has-text-centered" active={active === 2}>
-            <iframe className="is-hidden-mobile" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>            
-            <iframe className="is-hidden-tablet" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+            <iframe className="is-hidden-mobile" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+            <iframe className="is-hidden-tablet has-text-centered" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
           </Content>
         </div>
       </section>
