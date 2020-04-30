@@ -103,7 +103,4 @@ export default styled(Medias)`
   .tab:hover, .tab:active {
 		color: ${colors.primary};
   }
-  .1 {
-    margin-right: 0.5rem;
-  }
 `;

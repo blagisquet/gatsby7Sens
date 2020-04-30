@@ -18,7 +18,7 @@ const Services = ({ className }) => {
       <div className="columns has-text-centered services">
         <div className="column">
           <img src={record} alt="enregistrement" />
-          <p className="is-size-4 has-text-weight-semibold">Enregistrement</p>
+          <p className="is-size-4 serv has-text-weight-semibold">Enregistrement</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">à partir de 30€/h<br />
               ½ journée (4h) : 120€<br />
@@ -29,7 +29,7 @@ const Services = ({ className }) => {
         </div>
         <div className="column">
           <img src={mix} alt="mixage" />
-          <p className="is-size-4 has-text-weight-semibold">Mixage</p>
+          <p className="is-size-4 serv has-text-weight-semibold">Mixage</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">à partir de 120€/titre</p>
             <p>Le tarif du mixage évoluera en fonction de la complexité du projet (exigences, nombre de pistes)</p>
@@ -38,7 +38,7 @@ const Services = ({ className }) => {
         </div>
         <div className="column">
           <img src={mastering} alt="mastering" />
-          <p className="is-size-4 has-text-weight-semibold">Mastering</p>
+          <p className="is-size-4 serv has-text-weight-semibold">Mastering</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">stéréo : 42€/titre <br />
           stems : 78€/titre</p>
@@ -49,7 +49,7 @@ const Services = ({ className }) => {
         </div>
         <div className="column">
           <img src={rapper} alt="rap" />
-          <p className="is-size-4 has-text-weight-semibold">Forfait Rap / Cover</p>
+          <p className="is-size-4 serv has-text-weight-semibold">Forfait Rap / Cover</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">instru stéréo : 170€/titre <br />
           instru multipiste : 200€/titre</p>
@@ -72,5 +72,8 @@ export default styled(Services)`
   h2 {
     margin-top: ${pxToRem(48)};
     margin-bottom: ${pxToRem(24)}
+  }
+  .serv {
+    margin-bottom: ${pxToRem(12)};
   }
 `;

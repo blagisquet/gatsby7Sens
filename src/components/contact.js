@@ -18,9 +18,9 @@ const Contact = ({ className }) => {
                 <h4 className="title is-4">Tél<span className="is-hidden-widescreen">.</span><span className="is-hidden-desktop-only">éphone</span></h4>
               </div>
               <div className="column has-text-right">
-                <a className="button btn is-danger is-outlined is-fullwidth" href="tel:+33658400008"><span className="icon is-medium">
+                <a className="button btn is-danger is-outlined is-fullwidth" href="tel:+33652887250"><span className="icon is-medium">
                   <i className="icons fas fa-phone-alt"></i>
-                </span>06 58 40 00 08</a>
+                </span>06 52 88 72 50</a>
               </div>
             </div>
           </div>
@@ -30,21 +30,21 @@ const Contact = ({ className }) => {
                 <h4 className="title is-4">Email</h4>
               </div>
               <div className="column has-text-right">
-                <button className="button btn is-danger is-outlined is-fullwidth" href="mailto:b.lagisquet@gmail.com">
+                <button className="button btn is-danger is-outlined is-fullwidth" href="mailto:studio@sensduspectacle.com">
                   <span className="icon is-medium ">
                     <i className="icons fas fa-envelope"></i>
-                  </span>b.lagisquet@gmail.com</button>
+                  </span>studio@sensduspectacle.com</button>
               </div>
             </div>
           </div>
         </div>
-        <form method="post" action="https://formspree.io/xjvenvnj">
+        <form method="post" action="https://formspree.io/xleprzaw">
           <div className="columns">
             <div className="column is-half">
               <div className="field">
                 <label className="label" for="name">Prénom / Nom</label>
                 <div className="control has-icons-left">
-                  <input className="input" type="text" name="name" />
+                  <input className="input" type="text" name="name" required />
                   <span className="icon is-small is-left">
                     <i className="fas fa-user"></i>
                   </span>
@@ -53,7 +53,7 @@ const Contact = ({ className }) => {
               <div className="field">
                 <label className="label" for="email">Email</label>
                 <div className="control has-icons-left">
-                  <input className="input" type="email" name="_replyto" />
+                  <input className="input" type="email" name="_replyto" required />
                   <span className="icon is-small is-left">
                     <i className="fas fa-envelope"></i>
                   </span>
@@ -64,12 +64,13 @@ const Contact = ({ className }) => {
               <div className="field">
                 <label className="label">Message</label>
                 <div className="control">
-                  <textarea className="textarea" name="message"></textarea>
+                  <textarea className="textarea" name="message" required></textarea>
                 </div>
               </div>
               <div className="field is-pulled-right">
                 <div className="control">
-                  <button className="button is-link is-success envoyer">Envoyer</button>
+                  <button className="button is-hidden-mobile is-link is-success envoyer">Envoyer</button>
+                  <button className="button is-hidden-tablet is-link is-success envoyerMob is-fullwidth">Envoyer</button>
                 </div>
               </div>
             </div>
@@ -99,6 +100,9 @@ export default styled(Contact)`
   }
   .envoyer {
     width: 20rem;
+  }
+  .envoyerMob {
+    width: 14rem;
   }
   /* .btn {
     margin-bottom: ${pxToRem(24)};

@@ -19,8 +19,17 @@ const Footer = ({ className }) => {
           <div className="address">
             <p>10 rue Pérard</p>
             <p>36000 Châteauroux</p>
-            <p>SIRET 1253468574878695456</p>
+            <p>SIRET 80267266700028</p>
           </div>
+          <a className="reseaux" href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
+          </a>
+          <a className="reseaux" href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-large"><i class="fab fa-instagram fa-2x"></i></span>
+          </a>
+          <a className="reseaux" href="https://twitter.com/studio7esens" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-large"><i class="fab fa-twitter fa-2x"></i></span>
+          </a>
         </div>
         <div className="menu column is-one-third">
           <ul className="menu-list">
@@ -51,5 +60,12 @@ export default styled(Footer)`
   }
   img {
     width: 50%;
+  }
+  i {
+    color: ${colors.white};
+    margin-left: ${pxToRem(16)};
+    &:hover {
+      color: ${colors.primary};
+    }
   }
 `;

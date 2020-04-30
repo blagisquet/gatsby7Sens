@@ -18,16 +18,16 @@ const Studio = ({ className }) => {
             Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
             </p>
           <p>
-            En plein cœur de Châteauroux, Louis l’ingénieur du son vous accueille dans des locaux de 45m2
+            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, Louis l’ingénieur du son vous accueille dans des locaux de 45m2
               composés d’une régie et de deux cabines <span className="has-text-weight-semibold">acoustiquement irréprochables</span>.
             </p>
           <p>
             Enregistrement live, instrument par instrument (re-recording), cover, création de jingle, publicités d’entreprise,
-            captation de concert, le studio s’adapte à vos besoins et à tous les styles.
+            captation de concert, le studio s’adapte à vos besoins et à <span className="has-text-weight-semibold">tous les styles</span>.
             </p>
           <p>
             Doté d’un équipement <span className="has-text-weight-semibold">haut de gamme et dernier cri</span>, tout est mis en œuvre pour créer un confort de travail à la hauteur de vos exigences.
-              Les tarifs avantageux assurent l’accès à un enregistrement professionnel pour tous, et les sessions sont aménageables selon vos habitudes et vos envies.
+              Les <span className="has-text-weight-semibold">tarifs avantageux</span> assurent l’accès à un enregistrement professionnel pour tous, et les sessions sont aménageables selon vos habitudes et vos envies.
             </p>
         </div>
       </section>
