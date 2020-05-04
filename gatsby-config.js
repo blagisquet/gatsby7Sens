@@ -32,7 +32,7 @@ module.exports = {
 				background_color: '#2980b9',
 				theme_color: '#2980b9',
 				display: 'standalone',
-				icon: '',
+				icon: 'src/images/logosmall.png',
 				orientation: 'portrait'
 			}
 		},

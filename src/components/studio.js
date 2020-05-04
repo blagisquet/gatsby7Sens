@@ -2,8 +2,6 @@ import React from 'react';
 import { pxToRem } from '../theme/helpers';
 import styled from 'styled-components';
 
-import Twisted from '../theme/twisted';
-
 import mix from '../images/mix2.jpg';
 
 import './style.scss';

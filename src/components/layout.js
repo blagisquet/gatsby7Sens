@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 
 import './style.scss';
 
+import Avis from './avis';
 import Contact from './contact';
 import Helmet from './helmet';
 import Header from './header';
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
 			<Services />
 			<Materiel />
 			<Medias />
+			<Avis />
 			<FindUs />
 			<Contact />
 			<Footer />
