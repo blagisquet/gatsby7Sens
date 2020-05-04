@@ -104,8 +104,4 @@ export default styled(Contact)`
   .envoyerMob {
     width: 14rem;
   }
-  /* .btn {
-    margin-bottom: ${pxToRem(24)};
-    width: 5rem !important;
-  } */
 `;
