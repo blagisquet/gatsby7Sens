@@ -68,6 +68,8 @@ export default styled(Services)`
   }
   .services {
     margin-top: ${pxToRem(20)};
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   h2 {
     margin-top: ${pxToRem(48)};

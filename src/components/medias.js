@@ -28,7 +28,7 @@ const Medias = ({ className }) => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="medias">
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Médias</h2>
         {/* Desktop */}
         <Tabs className="has-text-centered is-hidden-mobile">
@@ -102,5 +102,8 @@ export default styled(Medias)`
   }
   .tab:hover, .tab:active {
 		color: ${colors.primary};
+  }
+  .medias {
+    margin: 1rem 1rem;
   }
 `;
