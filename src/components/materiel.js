@@ -76,4 +76,11 @@ export default styled(Materiel)`
   .mat {
     margin-bottom: ${pxToRem(12)};
   }
+  .columns {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .carousel .slide {
+    background-color: white !important;
+  }
 `;
