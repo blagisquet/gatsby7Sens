@@ -14,9 +14,9 @@ const Navbar = ({ className }) => (
 		<div className="hero-head">
 			<nav className="navbar has-background-grey-darker is-fixed-top-mobile" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
-					<Link to="#" className="navbar-item">
+					<a href="#" className="navbar-item">
 						<img src={Logo} className="image" alt="logo du studio" />
-					</Link>
+					</a>
 					<label role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" htmlFor="nav-toggle-state" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
@@ -26,13 +26,13 @@ const Navbar = ({ className }) => (
 				<input type="checkbox" id="nav-toggle-state" />
 				<div id="navbarBasicExample" className="navbar-menu has-background-grey-darker">
 					<div className="navbar-start has-text-centered-desktop">
-						<Link to="#" className="navbar-item menu is-size-4">Accueil</Link>
-						<Link to="#studio" className="navbar-item menu is-size-4">Le studio</Link>
-						<Link to="#services" className="navbar-item menu is-size-4">Les services</Link>
-						<Link to="#medias" className="navbar-item menu is-size-4">Médias</Link>
-						<Link to="#avis" className="navbar-item menu is-size-4">Avis</Link>
-						<Link to="#map" className="navbar-item menu is-size-4">Nous trouver</Link>
-						<Link to="#contact" className="navbar-item menu is-size-4">Contact</Link>
+						<a href="#" className="navbar-item menu is-size-4">Accueil</a>
+						<a href="#studio" className="navbar-item menu is-size-4">Le studio</a>
+						<a href="#services" className="navbar-item menu is-size-4">Les services</a>
+						<a href="#medias" className="navbar-item menu is-size-4">Médias</a>
+						<a href="#avis" className="navbar-item menu is-size-4">Avis</a>
+						<a href="#map" className="navbar-item menu is-size-4">Nous trouver</a>
+						<a href="#contact" className="navbar-item menu is-size-4">Contact</a>
 					</div>
 				</div>
 			</nav>

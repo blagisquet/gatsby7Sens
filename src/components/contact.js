@@ -42,7 +42,7 @@ const Contact = ({ className }) => {
           <div className="columns">
             <div className="column is-half">
               <div className="field">
-                <label className="label" for="name">Prénom / Nom</label>
+                <label className="label" htmlFor="name">Prénom / Nom</label>
                 <div className="control has-icons-left">
                   <input className="input" type="text" name="name" required />
                   <span className="icon is-small is-left">
@@ -51,7 +51,7 @@ const Contact = ({ className }) => {
                 </div>
               </div>
               <div className="field">
-                <label className="label" for="email">Email</label>
+                <label className="label" htmlFor="email">Email</label>
                 <div className="control has-icons-left">
                   <input className="input" type="email" name="_replyto" required />
                   <span className="icon is-small is-left">

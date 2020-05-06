@@ -13,7 +13,7 @@ const Avis = ({ className }) => {
   return (
     <div className={className}>
       <h2 id="avis" className="has-text-centered has-text-weight-bold is-size-2">Avis</h2>
-      <Carousel showStatus={false} infiniteLoop={true} dynamicHeight={true}>
+      <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} dynamicHeight={true}>
         {/*FIrst page*/}
         <div className="tile is-ancestor">
           <div className="tile is-4 is-vertical is-parent">

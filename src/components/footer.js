@@ -22,24 +22,24 @@ const Footer = ({ className }) => {
             <p>SIRET 80267266700028</p>
           </div>
           <a className="reseaux" href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
-            <span class="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
+            <span className="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
           </a>
           <a className="reseaux" href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
-            <span class="icon is-large"><i class="fab fa-instagram fa-2x"></i></span>
+            <span className="icon is-large"><i className="fab fa-instagram fa-2x"></i></span>
           </a>
           <a className="reseaux" href="https://twitter.com/studio7esens" target="_blank" rel="noopener noreferrer">
-            <span class="icon is-large"><i class="fab fa-twitter fa-2x"></i></span>
+            <span className="icon is-large"><i className="fab fa-twitter fa-2x"></i></span>
           </a>
         </div>
         <div className="menu column is-one-third">
           <ul className="menu-list">
-            <Link to="#" className="menuLink"><li>Accueil</li></Link>
-            <Link to="#studio" className="menuLink"><li>Le studio</li></Link>
-            <Link to="#services" className="menuLink"><li>Les services</li></Link>
-            <Link to="#medias" className="menuLink"><li>Médias</li></Link>
-            <Link to="#avis" className="menuLink"><li>Avis</li></Link>
-            <Link to="#map" className="menuLink"><li>Nous trouver</li></Link>
-            <Link to="#contact" className="menuLink"><li>Contact</li></Link>
+            <a href="#" className="menuLink"><li>Accueil</li></a>
+            <a href="#studio" className="menuLink"><li>Le studio</li></a>
+            <a href="#services" className="menuLink"><li>Les services</li></a>
+            <a href="#medias" className="menuLink"><li>Médias</li></a>
+            <a href="#avis" className="menuLink"><li>Avis</li></a>
+            <a href="#map" className="menuLink"><li>Nous trouver</li></a>
+            <a href="#contact" className="menuLink"><li>Contact</li></a>
           </ul>
         </div>
       </div>

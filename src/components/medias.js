@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Artistes from './artistes';
 
 import './style.scss';
 
@@ -68,14 +69,15 @@ const Medias = ({ className }) => {
           </select>
         </div> */}
         <div>
+          {/*Artistes*/}
           <Content active={active === 0}>
-            <div>
-              0
-            </div>
+            <Artistes />
           </Content>
+          {/*Studio*/}
           <Content active={active === 1}>
             1
           </Content>
+          {/*Prods*/}
           <Content className="has-text-centered" active={active === 2}>
             <iframe className="is-hidden-mobile" title="Les prods réalisés par Louis" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
             <iframe className="is-hidden-tablet has-text-centered" title="Les prods réalisés par Louis" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
