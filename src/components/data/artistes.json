@@ -5,7 +5,7 @@
     "title": "Everybody Say",
     "genre": "Indie pop",
     "link": "https://www.youtube.com/watch?v=JmuJRCXBaVw",
-    "picture": "./src/images/couv/Foze.jpg"
+    "picture": "http://localhost:8000/src/images/couv/Foze.jpg"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "title": "On court",
     "genre": "Chanson",
     "link": "https://www.youtube.com/watch?v=FHeWSB0w9NY",
-    "picture": "./public/couv/hana.png"
+    "picture": "../../../public/couv/hana.png"
   },
   {
     "id": "3",
@@ -45,7 +45,7 @@
     "title": "Nekfeu Cheum",
     "genre": "Drum Cover",
     "link": "https://www.youtube.com/watch?v=r_XPiQbOBi0",
-    "picture": "./src/images/couv/lr.png"
+    "picture": "localhost:3000/src/images/couv/lr.png"
   },
   {
     "id": "7",

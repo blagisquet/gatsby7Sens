@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
 
-import artistes from '../data/artistes.json';
+import artistes from './data/artistes.json';
 
 import './style.scss';
-
-// const artiste = artistes.map((artistes) => {
-//   return (
-//     <div>
-//       Pute
-//     <div className="tile fade-in" key={artistes.id}>
-//       <a href={artistes.link} target="_blank">
-//         <img src={artistes.picture} alt={artistes.artiste} />
-//       </a>
-//     </div>
-//     </div>
-//   )
-// })
 
 class Artistes extends Component {
   constructor(props) {
@@ -45,16 +32,17 @@ class Artistes extends Component {
               <div className="tile fade-in column is-one-third" key={item.id}>
                 <a href={item.link} targer="_blank" rel="noreferrer noopener">
                   <img src={item.picture} alt={item.artiste + ' - ' + item.title} />
-                  <span className="count">{index + 1}</span>
-                  <h2>{item.title}</h2>
-                  <p>{item.body}</p>
+                  {/* <span className="count">{index + 1}</span> */}
+                  <p>{item.artiste}</p>
+                  <p>{item.title}</p>
+                  <p>{item.genre}</p>
                 </a>
               </div>
             );
           })}
         </div>
         {this.state.visible < this.state.items.length &&
-          <button onClick={this.loadMore} type="button" className="button is-danger load-more">Charger plus</button>
+          <button onClick={this.loadMore} type="button" className="button is-danger is-fullwidth-mobile is-rounded load-more">Voir plus</button>
         }
       </section>
     );
