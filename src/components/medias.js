@@ -61,13 +61,6 @@ const Medias = ({ className }) => {
             <span className="is-size-6" active={active === 2} id={2}>Prods</span>
           </TabMob>
         </Tabs>
-        {/* <div class="select">
-          <select className="is-hidden-tablet is-fullwidth-mobile">
-            <option onClick={handleClick} active={active === 3} id={3}>Artistes</option>
-            <option onClick={handleClick} active={active === 4} id={4}>Studio</option>
-            <option onClick={handleClick} active={active === 5} id={5}>Productions</option>
-          </select>
-        </div> */}
         <div>
           {/*Artistes*/}
           <Content active={active === 0}>
