@@ -76,11 +76,11 @@ class Artistes extends Component {
 
   render() {
     return (
-      <section className="feed">
-        <div className="tiles columns" aria-live="polite">
+      <section className="feed has-text-centered">
+        <div className="tiles columns is-multiline" aria-live="polite">
           {this.state.items.slice(0, this.state.visible).map((item, index) => {
             return (
-                <div className="tile fade-in" key={item.id}>
+                <div className="tile fade-in column is-one-third" key={item.id}>
                   <a href={item.link} targer="_blank" rel="noreferrer noopener">
                     <img src={item.picture} alt={item.artiste + ' - ' + item.title} />
                     <span className="count">{index + 1}</span>
