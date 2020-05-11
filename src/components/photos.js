@@ -40,7 +40,7 @@ class Photos extends Component {
           }
         </div>
       </section>
-    )
+    );
   }
 }
 
