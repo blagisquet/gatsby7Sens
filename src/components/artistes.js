@@ -10,8 +10,7 @@ class Artistes extends Component {
 
     this.state = {
       items: artistes,
-      visible: 3,
-      error: false
+      visible: 3
     };
 
     this.loadMore = this.loadMore.bind(this);
