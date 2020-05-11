@@ -76,26 +76,33 @@ class Artistes extends Component {
 
   render() {
     return (
-      <section className="feed has-text-centered">
-        <div className="tiles columns is-multiline" aria-live="polite">
-          {this.state.items.slice(0, this.state.visible).map((item, index) => {
-            return (
-                <div className="tile fade-in column is-one-third" key={item.id}>
+      <section className="contain">
+        <div className="feed has-text-centered">
+          <div className="tiles columns has-text-centered is-multiline" aria-live="polite">
+            {this.state.items.slice(0, this.state.visible).map((item, index) => {
+              return (
+                <div className="tile fade-in artist column is-one-third" key={item.id}>
                   <a href={item.link} targer="_blank" rel="noreferrer noopener">
-                    <img src={item.picture} alt={item.artiste + ' - ' + item.title} />
-                    <span className="count">{index + 1}</span>
-                    <p>{item.title}</p>
-                    <p>{item.body}</p>
+                    <figure className="image is-128x128">
+                      {/* <img src={item.picture} alt={item.artiste + ' - ' + item.title} /> */}
+                      <img src="https://bulma.io/images/placeholders/128x128.png" />
+                    </figure>
+                    <div className="info">
+                      <p>{item.artiste}</p>
+                      <p>{item.title}</p>
+                      <p>{item.genre}</p>
+                      {/* <p>Lien Youtube</p> */}
+                    </div>
                   </a>
-                
-              </div>
-            );
+                </div>
+              );
 
-          })}
+            })}
+          </div>
+          {this.state.visible < this.state.items.length &&
+            <button onClick={this.loadMore} type="button" className="button is-danger load-more">Voir plus</button>
+          }
         </div>
-        {this.state.visible < this.state.items.length &&
-          <button onClick={this.loadMore} type="button" className="button is-danger load-more">Load more</button>
-        }
       </section>
     );
   }
