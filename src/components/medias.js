@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Artistes from './artistes';
+import Photos from './photos';
 
 import './style.scss';
 
@@ -68,7 +69,7 @@ const Medias = ({ className }) => {
           </Content>
           {/*Studio*/}
           <Content active={active === 1}>
-            1
+            <Photos />
           </Content>
           {/*Prods*/}
           <Content className="has-text-centered" active={active === 2}>

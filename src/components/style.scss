@@ -83,27 +83,28 @@ $danger: #c80036 !important;
 
 .fade-in {
   animation: fadeIn 0.5s ease-in;
+  position: relative;
+  text-align: center;
 }
 
 .feed {
   margin-top: 48px;
 }
 
-.tiles {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.artist {
-  position: relative;
-  text-align: center;
-}
+// .tiles {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
 
 .info {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.is-horizontal-center {
+  justify-content: center !important;
 }
 
