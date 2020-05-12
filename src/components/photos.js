@@ -25,7 +25,8 @@ class Photos extends Component {
     });
   }
 
-  toggleModal() {
+  toggleModal(id) {
+    this.setState({ openedModal: id});
     this.setState((prev, props) => {
       const newState = !prev.modalState;
 
