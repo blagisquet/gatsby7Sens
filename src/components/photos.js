@@ -33,8 +33,7 @@ class Photos extends Component {
     });
   }
 
-  openModal = (id )=> {
-    console.log(id)
+  openModal = id => {
     this.setState({ openedModal: id });
   }
 
@@ -50,7 +49,7 @@ class Photos extends Component {
             {this.state.pictures.slice(0, this.state.visible).map((picture, index) => {
               return (
                 <div className="tile fade-in column is-flex is-horizontal-center is-one-third" key={picture.id}>
-                  <a onClick={() => this.openModal(index)}>
+                  <a onClick={() => this.openModal(picture.id)}>
                     <figure className="image is-128x128 is-inline-block">
                       <img src="https://bulma.io/images/placeholders/128x128.png" />
                     </figure>
@@ -58,8 +57,7 @@ class Photos extends Component {
                   <Modal
                     closeModal={this.toggleModal}
                     modalState={this.state.modalState}
-                    isOpen={this.state.openedModal === picture.index}
-                    toggle={this.closeModal}
+                    isOpen={this.state.openedModal === picture}
                     title={picture.alt + picture.id}>
                     <figure className="image is-128x128 is-inline-block">
                       <img src="https://bulma.io/images/placeholders/128x128.png" />
