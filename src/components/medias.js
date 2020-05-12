@@ -19,6 +19,7 @@ const Medias = ({ className }) => {
       setActive(index);
     }
   };
+
   return (
     <div className={className}>
       <section className="hero image">

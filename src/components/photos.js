@@ -1,23 +1,45 @@
 import React, { Component } from 'react';
 
+import Modal from '../theme/modal';
+
 import pictures from './data/pictures.json';
 
 import './style.scss';
 
 class Photos extends Component {
 
-    state = {
-      pictures: pictures,
-      visible: 3
-    };
+  state = {
+    pictures: pictures,
+    visible: 3,
+    modalState: false,
+    openedModal: null
+  };
 
-    loadMore = this.loadMore.bind(this);
+  loadMore = this.loadMore.bind(this);
 
+  toggleModal = this.toggleModal.bind(this);
 
   loadMore() {
     this.setState((prev) => {
       return { visible: prev.visible + 3 };
     });
+  }
+
+  toggleModal() {
+    this.setState((prev, props) => {
+      const newState = !prev.modalState;
+
+      return { modalState: newState };
+    });
+  }
+
+  openModal = (id )=> {
+    console.log(id)
+    this.setState({ openedModal: id });
+  }
+
+  closeModal = () => {
+    this.setState({ openedModal: null });
   }
 
   render() {
@@ -28,9 +50,21 @@ class Photos extends Component {
             {this.state.pictures.slice(0, this.state.visible).map((picture, index) => {
               return (
                 <div className="tile fade-in column is-flex is-horizontal-center is-one-third" key={picture.id}>
-                  <figure className="image is-128x128 is-inline-block">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" />
-                  </figure>
+                  <a onClick={() => this.openModal(index)}>
+                    <figure className="image is-128x128 is-inline-block">
+                      <img src="https://bulma.io/images/placeholders/128x128.png" />
+                    </figure>
+                  </a>
+                  <Modal
+                    closeModal={this.toggleModal}
+                    modalState={this.state.modalState}
+                    isOpen={this.state.openedModal === picture.index}
+                    toggle={this.closeModal}
+                    title={picture.alt + picture.id}>
+                    <figure className="image is-128x128 is-inline-block">
+                      <img src="https://bulma.io/images/placeholders/128x128.png" />
+                    </figure>
+                  </Modal>
                 </div>
               );
             })}
