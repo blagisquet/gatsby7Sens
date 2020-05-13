@@ -45,7 +45,7 @@ const Footer = ({ className }) => {
       </div> */}
       <div className="has-background-grey-darker has-text-light">
         <div className="columns is-mobile">
-          <div className="column is-hidden-mobile">
+          <div className="column is-hidden-mobile sept">
             <figure className="image">
               <img src={logo} alt="logo studio septième sens" />
             </figure>
@@ -131,5 +131,8 @@ export default styled(Footer)`
   }
   .cv {
     color: ${colors.primary};
+  }
+  .sept {
+    margin-left: 1rem;
   }
 `;

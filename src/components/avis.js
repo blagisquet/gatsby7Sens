@@ -18,12 +18,13 @@ const Avis = ({ className }) => {
         <div className="tile is-ancestor">
           <div className="tile is-4 is-vertical is-parent">
             <div className="tile is-child box">
-              <p className="title is-size-5">Cie Noura</p>
-              <p>“ Louis est très pro, créatif et attentif :) “</p>
+
+              <p className="title is-size-5">Simon Vachet</p>
+              <p>“ Très bon accueil, très professionnel. Un bon moment de convivialité et de musique !... “</p>
             </div>
             <div className="tile is-child box">
-              <p className="title is-size-5">Goby</p>
-              <p>“ Écoute attentive de la part de Louis envers l’artiste, des supers moments passés, du travail propre, une passion partagée ! “</p>
+              <p className="title is-size-5">Föze</p>
+              <p>“ Super pro, à l’écoute, agréable et du bon matos, tout ce qu’il faut je recommande! “</p>
             </div>
           </div>
           <div className="tile is-parent">
@@ -35,28 +36,28 @@ const Avis = ({ className }) => {
             </div>
           </div>
         </div>
-           {/*Second page*/}
+        {/*Second page*/}
         <div className="tile is-ancestor">
           <div className="tile is-parent">
             <div className="tile is-child box">
               <p className="title is-size-5">Loïc Loizeau</p>
-              <p>“ J’ai passé une super journée en studio. Louis est très professionnel et n’hésite pas à prendre le temps nécessaire pour travailler le morceau. 
-                Les conditions d’enregistrement sont au top, lumière tamisée, micro d’excellente qualité, studio parfaitement insonorisé etc… 
-                Tout est fait pour être mis à l’aise. Le mixage ainsi que le mastering sont dignes d’un travail soigné et propre. Je le conseille vraiment. 
+              <p>“ J’ai passé une super journée en studio. Louis est très professionnel et n’hésite pas à prendre le temps nécessaire pour travailler le morceau.
+              Les conditions d’enregistrement sont au top, lumière tamisée, micro d’excellente qualité, studio parfaitement insonorisé etc…
+              Tout est fait pour être mis à l’aise. Le mixage ainsi que le mastering sont dignes d’un travail soigné et propre. Je le conseille vraiment.
                 Prix attractifs en plus de ça ! Que du positif :) “</p>
             </div>
           </div>
           <div className="tile is-4 is-vertical is-parent">
             <div className="tile is-child box">
-              <p className="title is-size-5">Föze</p>
-              <p>“ Super pro, à l’écoute, agréable et du bon matos, tout ce qu’il faut je recommande! “</p>
+              <p className="title is-size-5">Goby</p>
+              <p>“ Écoute attentive de la part de Louis envers l’artiste, des supers moments passés, du travail propre, une passion partagée ! “</p>
             </div>
             <div className="tile is-child box">
-              <p className="title is-size-5">Simon Vachet</p>
-              <p>“ Très bon accueil, très professionnel. Un bon moment de convivialité et de musique !... “</p>
+              <p className="title is-size-5">Cie Noura</p>
+              <p>“ Louis est très pro, créatif et attentif :) “</p>
             </div>
           </div>
-        </div>     
+        </div>
       </Carousel>
       <span id="map"></span>
     </div>
