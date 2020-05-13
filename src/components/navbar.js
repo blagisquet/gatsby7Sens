@@ -12,10 +12,11 @@ import styled from 'styled-components';
 const Navbar = ({ className }) => (
 	<section className={className}>
 		<div className="hero-head">
-			<nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
+			<nav className="navbar  has-background-grey-darker has-text-centered" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a href="#" className="navbar-item">
 						<img src={Logo} className="image" alt="logo du studio" />
+						<p className="stud is-size-5">Studio Septième Sens</p>
 					</a>
 					<label role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" htmlFor="nav-toggle-state" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>
@@ -25,14 +26,14 @@ const Navbar = ({ className }) => (
 				</div>
 				<input type="checkbox" id="nav-toggle-state" />
 				<div id="navbarBasicExample" className="navbar-menu has-background-grey-darker">
-					<div className="navbar-start has-text-centered-desktop">
-						<a href="#" className="navbar-item menu is-size-4">Accueil</a>
-						<a href="#studio" className="navbar-item menu is-size-4">Le studio</a>
-						<a href="#services" className="navbar-item menu is-size-4">Les services</a>
-						<a href="#medias" className="navbar-item menu is-size-4">Médias</a>
-						<a href="#avis" className="navbar-item menu is-size-4">Avis</a>
-						<a href="#map" className="navbar-item menu is-size-4">Nous trouver</a>
-						<a href="#contact" className="navbar-item menu is-size-4">Contact</a>
+					<div className="navbar-start has-text-centered">
+						<a href="#" className="navbar-item menu is-size-5">Accueil</a>
+						<a href="#studio" className="navbar-item menu is-size-5">Le studio</a>
+						<a href="#services" className="navbar-item menu is-size-5">Les services</a>
+						<a href="#medias" className="navbar-item menu is-size-5">Médias</a>
+						<a href="#avis" className="navbar-item menu is-size-5">Avis</a>
+						<a href="#map" className="navbar-item menu is-size-5">Nous trouver</a>
+						<a href="#contact" className="navbar-item menu is-size-5">Contact</a>
 					</div>
 				</div>
 			</nav>
@@ -64,7 +65,7 @@ export default styled(Navbar)`
 		}
 	}
 
-	.nav {
-		opacity: 0.8;
+	.stud  {
+		margin-left: 2rem;
 	}
 `;

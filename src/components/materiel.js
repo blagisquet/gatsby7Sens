@@ -21,6 +21,7 @@ const Materiel = ({ className }) => {
           <li>Focal SM9</li>
           <li>Yamaha HS8</li>
           <li>Casque Beyerdynamic DT770 pro(x3)</li>
+          <li>ART Headamp 6 Pro</li>
         </ul>
         </div>
         <ul className="column is-one-quarter">

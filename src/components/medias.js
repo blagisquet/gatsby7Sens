@@ -6,7 +6,7 @@ import './style.scss';
 
 import styled from 'styled-components';
 
-import loulou from '../images/loulou2.jpg';
+import loulou from '../images/test.jpg';
 
 import { colors, pxToRem } from '../theme/helpers';
 import { Tabs, Tab, TabMob, Content } from '../theme/tab';
@@ -45,7 +45,7 @@ const Medias = ({ className }) => {
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 2} id={2}>
             <span className="icon 1"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
-            <span className="is-size-4" active={active === 2} id={2}>Productions</span>
+            <span className="is-size-4" active={active === 2} id={2}>Beats</span>
           </Tab>
         </Tabs>
         {/* Mobile */}
@@ -60,7 +60,7 @@ const Medias = ({ className }) => {
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 2} id={2}>
             <span className="icon"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
-            <span className="is-size-6" active={active === 2} id={2}>Prods</span>
+            <span className="is-size-6" active={active === 2} id={2}>Beats</span>
           </TabMob>
         </Tabs>
         <div>
@@ -74,8 +74,10 @@ const Medias = ({ className }) => {
           </Content>
           {/*Prods*/}
           <Content className="has-text-centered" active={active === 2}>
-            <iframe className="is-hidden-mobile" title="Les prods réalisés par Louis" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
-            <iframe className="is-hidden-tablet has-text-centered" title="Les prods réalisés par Louis" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+            <div className="bc">
+              <iframe className="is-hidden-mobile" title="Les prods réalisés par Louis" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=de270f/artwork=small/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+              <iframe className="is-hidden-tablet has-text-centered" title="Les prods réalisés par Louis" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=4102674163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sango.bandcamp.com/album/2009-2012-tapes">2009 — 2012 Tapes by Sango</a></iframe>
+            </div>
           </Content>
         </div>
       </section>
@@ -102,5 +104,8 @@ export default styled(Medias)`
   }
   .medias {
     margin: 1rem 1rem;
+  }
+  .bc {
+    margin-top: ${pxToRem(48)};
   }
 `;
