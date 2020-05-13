@@ -9,7 +9,7 @@ import './style.scss';
 const Studio = ({ className }) => {
   return (
     <div className={className}>
-      <section id="studio">
+      <section>
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Le studio</h2>
         <div className="text is-size-5 has-text-justified">
           <p>
@@ -37,6 +37,7 @@ const Studio = ({ className }) => {
               <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
           </div>
         </div>
+        <span id="services"></span>
       </section>
     </div>
   );

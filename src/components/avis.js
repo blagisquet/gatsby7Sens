@@ -11,7 +11,7 @@ import './style.scss';
 
 const Avis = ({ className }) => {
   return (
-    <div id="avis" className={className}>
+    <div className={className}>
       <h2 className="has-text-centered has-text-weight-bold is-size-2">Avis</h2>
       <Carousel showStatus={false} emulateTouch={true} showThumbs={false} infiniteLoop={true} dynamicHeight={true}>
         {/*FIrst page*/}
@@ -56,8 +56,9 @@ const Avis = ({ className }) => {
               <p>“ Très bon accueil, très professionnel. Un bon moment de convivialité et de musique !... “</p>
             </div>
           </div>
-        </div>
+        </div>     
       </Carousel>
+      <span id="map"></span>
     </div>
   );
 }

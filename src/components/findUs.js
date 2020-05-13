@@ -10,7 +10,7 @@ import './style.scss';
 
 const FindUs = ({ className }) => {
   return (
-    <div id="map" className={className}>
+    <div className={className}>
       <h2 className="is-size-2 has-text-centered has-text-weight-bold">Nous trouver</h2>
       <a href="https://goo.gl/maps/NLDzBV8N3Qf8wB9E8" target="_blank" rel="noopener noreferrer">
         <div className="image imageMob has-text-centered is-hidden-tablet">
@@ -20,6 +20,7 @@ const FindUs = ({ className }) => {
           <h4 className="title is-size-3">Voir sur Google Maps</h4>
         </div>
       </a>
+      <span id="contact"></span>
     </div>
   );
 }

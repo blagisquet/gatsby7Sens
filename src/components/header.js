@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import Home from './home';
 import Navbar from './navbar';
@@ -10,6 +10,7 @@ const Header = () => {
 		<section className="hero gradientBg is-fullheight-with-navbar">
 			<Navbar />
 			<Home />
+			<span id="studio"></span>
 		</section>
 	);
 }

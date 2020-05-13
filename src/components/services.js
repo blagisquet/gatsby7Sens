@@ -13,7 +13,7 @@ import { pxToRem } from '../theme/helpers';
 
 const Services = ({ className }) => {
   return (
-    <div className={className} id="services">
+    <div className={className}>
       <h2 className="is-size-2 has-text-centered has-text-weight-bold">Les services</h2>
       <div className="columns has-text-centered services">
         <div className="column">
@@ -56,7 +56,7 @@ const Services = ({ className }) => {
             <p>L'artiste apporte le fichier instrumental sur clé USB au format .wav.</p>
           </div>
         </div>
-        <p></p>
+        <span id="materiel"></span>
       </div>
     </div>
   );

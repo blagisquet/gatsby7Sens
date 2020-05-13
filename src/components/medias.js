@@ -21,7 +21,7 @@ const Medias = ({ className }) => {
   };
 
   return (
-    <div className={className} id="medias">
+    <div className={className}>
       <section className="hero image">
         {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
         <div className="hero-body twisted">
@@ -30,6 +30,7 @@ const Medias = ({ className }) => {
               <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
           </div>
         </div>
+        <span id="medias"></span>
       </section>
       <section className="medias">
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Médias</h2>
@@ -80,6 +81,7 @@ const Medias = ({ className }) => {
             </div>
           </Content>
         </div>
+        <span id="avis"></span>
       </section>
     </div>
   );
