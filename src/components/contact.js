@@ -104,4 +104,14 @@ export default styled(Contact)`
   .envoyerMob {
     width: 14rem;
   }
+  @media (max-width:330px){
+    .fa-envelope {
+      display: none;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1080px){
+    .fa-envelope {
+      display: none;
+    }
+  }
 `;

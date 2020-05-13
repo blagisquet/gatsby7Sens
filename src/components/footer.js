@@ -65,7 +65,6 @@ const Footer = ({ className }) => {
               <p>36000 Châteauroux</p>
               <p>SIRET 80267266700028</p>
             </a>
-
           </div>
           <div className="menu column">
             <ul className="menu-list">
@@ -94,7 +93,7 @@ const Footer = ({ className }) => {
               </a>
             </div>
         <div className="has-text-centered">
-          <p>Made with <span className="icon"><i className="fas fa-music"></i></span>  <span className="space"> by </span><a href="https://www.linkedin.com/in/baptiste-lagisquet-bb2a8937/" target="_blank" className="cv" rel="noopener noreferrer">Baptiste Lagisquet</a></p>
+          <p>Made with <span className="icon"><i className="fas fa-music"></i></span>  <span>by </span><a href="https://www.linkedin.com/in/baptiste-lagisquet-bb2a8937/" target="_blank" className="cv" rel="noopener noreferrer">Baptiste Lagisquet</a></p>
         </div>
 
       </div>
@@ -132,8 +131,5 @@ export default styled(Footer)`
   }
   .cv {
     color: ${colors.primary};
-  }
-  .space {
-    margin-left: 1rem;
   }
 `;

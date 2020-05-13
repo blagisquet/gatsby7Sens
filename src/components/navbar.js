@@ -17,8 +17,8 @@ const Navbar = ({ className }) => {
 			<nav className="navbar  has-background-grey-darker is-fixed-top has-text-centered" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a href="#" className="navbar-item">
-						<img src={Logo} className="image" alt="logo du studio" />
-						{/* <p className="stud is-size-5">Studio Septième Sens</p> */}
+						<img src={Logo} className="image is-hidden-mobile" alt="logo du studio" />
+						<p className="stud is-size-5">Studio Septième Sens</p>
 					</a>
 					{/* onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}*/}
 					<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
@@ -34,7 +34,7 @@ const Navbar = ({ className }) => {
 				</div>
 				<input type="checkbox" id="nav-toggle-state" />
 				<div id="navbarBasicExample" className={`navbar-menu has-background-grey-darker ${menuActive ? 'show_list' : ''}`}>
-					<div className="navbar-start is-pulled-right has-text-centered">
+					<div className="navbar-end has-text-centered">
 						<a href="#" className="navbar-item menu is-size-5">Accueil</a>
 						<a href="#studio" className="navbar-item menu is-size-5">Le studio</a>
 						<a href="#services" className="navbar-item menu is-size-5">Les services</a>
@@ -99,6 +99,6 @@ export default styled(Navbar)`
 	}
 
 	.stud  {
-		margin-left: 2rem;
+		/* margin-left: 2rem; */
 	}
 `;
