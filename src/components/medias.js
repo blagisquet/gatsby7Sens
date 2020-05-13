@@ -93,7 +93,7 @@ export default styled(Medias)`
     margin-bottom: ${pxToRem(24)}
   }
   .image {
-    background: url(${loulou}) center/cover no-repeat;
+    background: url(${loulou}) top/cover no-repeat;
   }
   .container {
     margin-top: ${pxToRem(250)};
