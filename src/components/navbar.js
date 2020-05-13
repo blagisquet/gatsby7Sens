@@ -12,7 +12,7 @@ import styled from 'styled-components';
 const Navbar = ({ className }) => (
 	<section className={className}>
 		<div className="hero-head">
-			<nav className="navbar has-background-grey-darker is-fixed-top-mobile" role="navigation" aria-label="main navigation">
+			<nav className="navbar has-background-grey-darker" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a href="#" className="navbar-item">
 						<img src={Logo} className="image" alt="logo du studio" />
@@ -62,5 +62,9 @@ export default styled(Navbar)`
 			background-color: hsl(0, 0%, 21%);
 			color: ${colors.primary};
 		}
+	}
+
+	.nav {
+		opacity: 0.8;
 	}
 `;

@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 const Contact = ({ className }) => {
   return (
-    <div className={className}>
+    <div id="contact" className={className}>
       <div className="contact container is-fluid">
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Contact</h2>
         <div className="columns is-vcentered">

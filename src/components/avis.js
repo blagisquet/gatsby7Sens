@@ -11,9 +11,9 @@ import './style.scss';
 
 const Avis = ({ className }) => {
   return (
-    <div className={className}>
-      <h2 id="avis" className="has-text-centered has-text-weight-bold is-size-2">Avis</h2>
-      <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} dynamicHeight={true}>
+    <div id="avis" className={className}>
+      <h2 className="has-text-centered has-text-weight-bold is-size-2">Avis</h2>
+      <Carousel showStatus={false} emulateTouch={true} showThumbs={false} infiniteLoop={true} dynamicHeight={true}>
         {/*FIrst page*/}
         <div className="tile is-ancestor">
           <div className="tile is-4 is-vertical is-parent">

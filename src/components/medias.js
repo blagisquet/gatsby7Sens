@@ -21,7 +21,7 @@ const Medias = ({ className }) => {
   };
 
   return (
-    <div className={className}>
+    <div className={className} id="medias">
       <section className="hero image">
         {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
         <div className="hero-body twisted">
