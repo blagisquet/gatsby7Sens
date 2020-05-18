@@ -62,7 +62,7 @@ const Footer = ({ className }) => {
             </a>
           </div>
           <div className="has-text-centered made">
-            <a href="https://www.linkedin.com/in/baptiste-lagisquet-bb2a8937/" target="_blank" className="made" rel="noopener noreferrer">Made with <span className="icon"><i className="fas fa-music"></i></span>  <span className="cv">by Baptiste Lagisquet</span></a>
+            <a href="https://www.linkedin.com/in/baptiste-lagisquet-bb2a8937/" target="_blank" className="made" rel="noopener noreferrer">Made with <span className="icon"><i className="fas fa-music"></i></span>  <span className="cv"><br className="is-hidden-tablet" />by Baptiste Lagisquet</span></a>
           </div>
 
         </div>

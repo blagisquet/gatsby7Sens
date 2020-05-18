@@ -106,11 +106,11 @@ class Artistes extends Component {
             {this.state.artistes.slice(0, this.state.visible).map((item, index) => {
               return (
                 <div className="tile fade-in column is-flex is-horizontal-center is-one-third" key={item.id}>
-                  <a href={item.link} targer="_blank" rel="noreferrer noopener">
+                  <a href={item.link} target="_blank" rel="noreferrer noopener">
                     <div className="has-text-centered">
                       <figure className="image is-128x128 is-inline-block">
-                        {/* <img src={item.picture} alt={item.artiste + ' - ' + item.title} /> */}
-                        <img src="https://bulma.io/images/placeholders/128x128.png" />
+                        <img src={item.picture} alt={item.artiste + ' - ' + item.title} />
+                        {/* <img src="https://bulma.io/images/placeholders/128x128.png" /> */}
                       </figure>
                     </div>
                     <div className="info">
