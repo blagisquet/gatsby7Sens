@@ -46,7 +46,7 @@ const Navbar = ({ className }) => {
 		</div> */}
 
 			{/* test */}
-			<div className="hero-head">
+			<div className="hero-head is-fixed-top">
 				<Menu right>
 						<a href="#" className="navbar-item menu is-size-5"><span className="icon"><i className="fas fa-home"></i></span>Accueil</a>
 						<a href="#studio" className="navbar-item menu is-size-5">Le studio</a>
@@ -94,9 +94,10 @@ export default styled(Navbar)`
   height: 30px;
   left: 36px;
   top: 36px;
+	z-index: 1000 !important;
 }
-	.bm-burgers-bars {
-
-	color: white;
+	.bm-burger-bars {
+	color: green;
+	width: 20rem;
 	}
 `;
