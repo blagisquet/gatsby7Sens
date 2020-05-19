@@ -141,7 +141,7 @@ $danger: $red;
   display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1023px) {
   .navTrigger {
     display: block;
   }  
@@ -153,7 +153,7 @@ $danger: $red;
   height: 25px;
   margin: 1rem;
   position: absolute;
-  right: 30px;
+  right: 16px;
   top: 0;
   bottom: 0;
 }

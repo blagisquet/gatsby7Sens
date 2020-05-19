@@ -69,7 +69,6 @@ const Contact = ({ className }) => {
               </div>
               <div className="field">
                 <div className="control">
-                  {/* <button className="button is-hidden-mobile is-link is-success envoyer">Envoyer</button> */}
                   <button className="button btn is-success envoyer is-fullwidth">Envoyer</button>
                 </div>
               </div>

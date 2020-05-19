@@ -18,7 +18,7 @@ const Navbar = ({ className }) => {
 					<div className="navbar-brand">
 						<a href="#" className="navbar-item">
 							<img src={Logo} className="image" alt="logo du studio" />
-							<p className="stud is-size-5 is-hidden-touch is-hidden-desktop-only">Studio Septième Sens</p>
+							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
 						</a>
 
 						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
@@ -30,13 +30,13 @@ const Navbar = ({ className }) => {
 					</div>
 					<input type="checkbox" id="nav-toggle-state" />
 					<div id="navbarBasicExample" className={`navbar-menu has-background-grey-darker ${menuActive ? 'show_list' : ''}`}>
-						<div className="navbar-end has-text-centered">
-							<a href="#" className="navbar-item menu is-size-5">Accueil</a>
-							<a href="#studio" className="navbar-item menu is-size-5">Le studio</a>
-							<a href="#services" className="navbar-item menu is-size-5">Les services</a>
-							<a href="#medias" className="navbar-item menu is-size-5">Médias</a>
-							<a href="#avis" className="navbar-item menu is-size-5">Avis</a>
-							<a href="#map" className="navbar-item menu is-size-5">Nous trouver</a>
+						<div className="navbar-end">
+							<a href="#" className="navbar-item is-size-5">Accueil</a>
+							<a href="#studio" className="navbar-item is-size-5">Le studio</a>
+							<a href="#services" className="navbar-item is-size-5">Les services</a>
+							<a href="#medias" className="navbar-item is-size-5">Médias</a>
+							<a href="#avis" className="navbar-item is-size-5">Avis</a>
+							<a href="#map" className="navbar-item is-size-5">Nous trouver</a>
 							<a href="#contact" className="navbar-item menu is-size-5">Contact</a>
 						</div>
 					</div>
@@ -47,6 +47,9 @@ const Navbar = ({ className }) => {
 }
 
 export default styled(Navbar)`
+	.image {
+		margin-left: 1rem
+	}
 	section {
 		position: fixed;
 	}
@@ -73,5 +76,13 @@ export default styled(Navbar)`
 
 	.stud  {
 		margin-left: 2rem;
+	}
+
+	.menu {
+		margin-right: 1rem;
+	}
+
+	.navbar-end {
+		margin-top: 0.3rem;
 	}
 `;
