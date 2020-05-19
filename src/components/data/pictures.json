@@ -1,32 +1,42 @@
 [
   {
     "id": "1",
-    "url": "",
-    "alt": "1"
+    "url": "http://www.studioseptiemesens.fr/photos/pano1.png",
+    "alt": "Vue panoramique du studio"
   },
   {
     "id": "2",
-    "url": "",
-    "alt": "2"
+    "url": "http://www.studioseptiemesens.fr/photos/pano2.png",
+    "alt": "Vue panoramique du studio"
   },
   {
     "id": "3",
-    "url": "",
-    "alt": "3"
+    "url": "http://www.studioseptiemesens.fr/photos/studio.png",
+    "alt": "Vue du studio avec la console de mix"
   },
   {
     "id": "4",
-    "url": "",
-    "alt": "4"
+    "url": "http://www.studioseptiemesens.fr/photos/canap.png",
+    "alt": "Vue de l'arrière du studio avec le canapé"
   },
   {
     "id": "5",
-    "url": "",
-    "alt": "5"
+    "url": "http://www.studioseptiemesens.fr/photos/cabine.png",
+    "alt": "Vue de la cabine d'enregistrement"
   },
   {
     "id": "6",
-    "url": "",
-    "alt": "6"
+    "url": "http://www.studioseptiemesens.fr/photos/vuecabine.png",
+    "alt": "Vue depuis la cabine du studio"
+  },
+  {
+    "id": "7",
+    "url": "http://www.studioseptiemesens.fr/photos/enceintes.png",
+    "alt": "enceintes d'écoute Focal"
+  },
+  {
+    "id": "8",
+    "url": "http://www.studioseptiemesens.fr/photos/micro.png",
+    "alt": "Micro brauner phantera"
   }
 ]

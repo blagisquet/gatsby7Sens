@@ -34,23 +34,6 @@ class Photos extends Component {
     this.setState({ openedModal: null });
   }
 
-  // toggleModal(e, index) {
-  // this.setState({ openedModal: id});
-  //   this.setState((prev, props) => {
-  //     const newState = !prev.modalState;
-
-  //     return { modalState: newState };
-  //   });
-  // }
-
-  // openModal = id => {
-  //   this.setState({ openedModal: id });
-  // }
-
-  // closeModal = () => {
-  //   this.setState({ openedModal: null });
-  // }
-
   render() {
     return (
       <section className="contain">
@@ -59,21 +42,14 @@ class Photos extends Component {
             {this.state.pictures.slice(0, this.state.visible).map((picture, index) => {
               return (
                 <div className="tile fade-in column is-flex is-horizontal-center is-one-third" key={picture.id}>
-                  <button onClick={e => this.toggleModal(e, index)}>
-                    <figure className="image is-128x128 is-inline-block">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" />
-                    </figure>
+                  <button className="studPic" onClick={e => this.toggleModal(e, index)}>
+                    <img src={picture.url} alt={picture.alt} />
                   </button>
                   <Modal
-                   
                     closeModal={() => this.closeModal()}
-                    // modalState={this.state.modalState}
                     showModal={this.state.openedModal === index}
-                    // isOpen={this.state.openedModal}
                     title={picture.alt + picture.id}>
-                    <figure className="image is-128x128 is-inline-block">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" />
-                    </figure>
+                    <img src={picture.url} alt={picture.alt} />
                   </Modal>
                 </div>
               );

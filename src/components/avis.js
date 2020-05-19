@@ -70,7 +70,7 @@ export default styled(Avis)`
    margin-bottom: ${pxToRem(24)}
 }
   .is-ancestor {
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 1rem;
   }
   .carousel .slide {
     background-color: white !important;
