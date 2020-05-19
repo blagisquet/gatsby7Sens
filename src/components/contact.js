@@ -67,10 +67,10 @@ const Contact = ({ className }) => {
                   <textarea className="textarea" name="message" required></textarea>
                 </div>
               </div>
-              <div className="field is-pulled-right">
+              <div className="field">
                 <div className="control">
-                  <button className="button is-hidden-mobile is-link is-success envoyer">Envoyer</button>
-                  <button className="button is-hidden-tablet is-link is-success envoyerMob is-fullwidth">Envoyer</button>
+                  {/* <button className="button is-hidden-mobile is-link is-success envoyer">Envoyer</button> */}
+                  <button className="button btn is-success envoyer is-fullwidth">Envoyer</button>
                 </div>
               </div>
             </div>
@@ -84,31 +84,27 @@ const Contact = ({ className }) => {
 export default styled(Contact)`
   h2 {
     margin-top: ${pxToRem(48)};
-    margin-bottom: ${pxToRem(24)}
+    margin-bottom: ${pxToRem(40)}
   }
-  .contact {
-    /* width: 80%;*/
-    /* margin-left: ${pxToRem(12)};
-    margin-right: ${pxToRem(12)}; */
-    margin-bottom: ${pxToRem(100)}; 
-  }
+
   a {
     color: black;
   }
+
   .icons {
     margin-right: 2rem;
   }
+
   .envoyer {
-    width: 20rem;
+    margin-top: 1rem;
   }
-  .envoyerMob {
-    width: 14rem;
-  }
+
   @media (max-width:330px){
     .fa-envelope {
       display: none;
     }
   }
+
   @media (min-width: 1024px) and (max-width: 1080px){
     .fa-envelope {
       display: none;

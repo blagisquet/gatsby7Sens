@@ -27,7 +27,11 @@ const FindUs = ({ className }) => {
 export default styled(FindUs)`
   h2 {
     margin-top: ${pxToRem(48)};
-    margin-bottom: ${pxToRem(24)}
+    margin-bottom: ${pxToRem(40)}
+  }
+
+  a {
+    margin-top: 1rem;
   }
 
   .tile:hover .imageDesk {

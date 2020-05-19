@@ -70,6 +70,7 @@ const Footer = ({ className }) => {
 
 export default styled(Footer)`
   .container {
+    margin-top: ${pxToRem(48)};
     padding-bottom: 1rem;
   }
   .menuLink {
