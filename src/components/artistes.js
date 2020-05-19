@@ -110,7 +110,7 @@ class Artistes extends Component {
                     <div className="has-text-centered">
                       <img className="artImg" src={item.picture} alt={item.artiste + ' - ' + item.title} />
                     </div>
-                    <div className="info is-size-5">
+                    <div className="info is-size-4">
                       <div className="textHover">
                         <p>{item.artiste}</p>
                         <p>{item.title}</p>
