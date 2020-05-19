@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
 
 import Logo from '../images/logosmall.png';
 
@@ -16,12 +15,12 @@ const Navbar = ({ className }) => {
 			<div className="hero-head">
 				<nav className="navbar has-background-grey-darker is-fixed-top has-text-centered" role="navigation" aria-label="main navigation">
 					<div className="navbar-brand">
-						<a href="#" className="navbar-item">
+						<a href="#accueil" className="navbar-item">
 							<img src={Logo} className="image" alt="logo du studio" />
 							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
 						</a>
 
-						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
+						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" onKeyDown={() => setMenuActive(!menuActive)} onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
 							<i></i>
 							<i></i>
 							<i></i>
@@ -31,7 +30,7 @@ const Navbar = ({ className }) => {
 					<input type="checkbox" id="nav-toggle-state" />
 					<div id="navbarBasicExample" className={`navbar-menu has-background-grey-darker ${menuActive ? 'show_list' : ''}`}>
 						<div className="navbar-end">
-							<a href="#" className="navbar-item is-size-5">Accueil</a>
+							<a href="#accueil" className="navbar-item is-size-5">Accueil</a>
 							<a href="#studio" className="navbar-item is-size-5">Le studio</a>
 							<a href="#services" className="navbar-item is-size-5">Les services</a>
 							<a href="#medias" className="navbar-item is-size-5">Médias</a>

@@ -62,7 +62,7 @@ const Contact = ({ className }) => {
             </div>
             <div className="column">
               <div className="field">
-                <label className="label">Message</label>
+                <label className="label" htmlFor="message">Message</label>
                 <div className="control">
                   <textarea className="textarea" name="message" required></textarea>
                 </div>

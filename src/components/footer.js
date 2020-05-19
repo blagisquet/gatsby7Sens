@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import styled from 'styled-components';
 import './style.scss';
@@ -36,7 +35,7 @@ const Footer = ({ className }) => {
           </div>
           <div className="menu column">
             <ul className="menu-list">
-              <a href="#" className="menuLink"><li>Accueil</li></a>
+              <a href="#accueil" className="menuLink"><li>Accueil</li></a>
               <a href="#studio" className="menuLink"><li>Le studio</li></a>
               <a href="#services" className="menuLink"><li>Les services</li></a>
             </ul>

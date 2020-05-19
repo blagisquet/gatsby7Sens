@@ -7,7 +7,7 @@ import './style.scss';
 const home = () => {
   return (
   <Hero>
-    <section>
+    <section id="accueil">
       <h1 className="is-invisible">Studio Septième Sens</h1>
     </section>
   </Hero>
