@@ -20,7 +20,7 @@ const Navbar = ({ className }) => {
 							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
 						</a>
 
-						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" onKeyDown={() => setMenuActive(!menuActive)} onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
+						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" role="presentation" onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
 							<i></i>
 							<i></i>
 							<i></i>

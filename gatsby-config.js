@@ -2,15 +2,15 @@ module.exports = {
 	siteMetadata: {
 		title: 'Studio Septième Sens',
 		author: 'Baptiste Lagisquet',
-		imageUrl: './images/logo.png',
-		description: 'Site vitrine du studio Septième Sens à Châteauroux',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
-		twitter: 'https://twitter.com/amanhimself',
-		github: `https://github.com/amandeepmittal`,
-		medium: 'https://medium.com/@amanhimself',
+		imageUrl: 'src/images/logo.png',
+		description: 'Site du studio Septième Sens à Châteauroux',
+		keywords: `Studio, Septieme, Sens, Lagrillère, Lagisquet, Musique, Enregistrement, Mixage, Mastering, Chateauroux`,
+		instagram: 'https://www.instagram.com/studioseptiemesens/',
+		twitter: 'https://twitter.com/studio7esens',
+		github: `https://github.com/blagisquet`,
 		gatsby: 'https://www.gatsbyjs.org/',
 		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`
+		siteUrl: `http://www.studioseptiemesens.fr`
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -26,11 +26,13 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: 'Makefolio',
-				short_name: 'Makefolio',
+				name: 'Studio Septième Sens',
+				short_name: '7Sens',
+				description: 'Application du studio Septième Sens à Châteauroux',
+				lang: 'fr',
 				start_url: '/',
-				background_color: '#2980b9',
-				theme_color: '#2980b9',
+				background_color: '#FFFFFF',
+				theme_color: '#c80036',
 				display: 'standalone',
 				icon: 'src/images/logosmall.png',
 				orientation: 'portrait'

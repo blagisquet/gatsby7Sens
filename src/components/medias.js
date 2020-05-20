@@ -37,31 +37,31 @@ const Medias = ({ className }) => {
         {/* Desktop */}
         <Tabs className="has-text-centered is-hidden-mobile">
           <Tab className="tab" onClick={handleClick} active={active === 0} id={0}>
-            <span className="icon 1"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
-            <span className="is-size-4" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active === 0} id={0}>Artistes</span>
+            <span className="icon 1"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active ? 0 : ''} id={0}></i></span>
+            <span className="is-size-4" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active ? 0 : ''} id={0}>Artistes</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 1} id={1}>
-            <span className="icon 1"><i className="fas fa-image" aria-hidden="true" active={active === 1} id={1}></i></span>
-            <span className="is-size-4" active={active === 1} id={1}>Studio</span>
+            <span className="icon 1"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>
+            <span className="is-size-4" active={active ? 1 : ''} id={1}>Studio</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 2} id={2}>
-            <span className="icon 1"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
-            <span className="is-size-4" active={active === 2} id={2}>Beats</span>
+            <span className="icon 1"><i className="fas fa-play-circle" aria-hidden="true" active={active ? 2 : ''} id={2}></i></span>
+            <span className="is-size-4" active={active ? 2 : ''} id={2}>Beats</span>
           </Tab>
         </Tabs>
         {/* Mobile */}
         <Tabs className="is-hidden-tablet">
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 0} id={0}>
-            <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active === 0} id={0}></i></span>
-            <span className="is-size-6" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active === 0} id={0}>Artistes</span>
+            <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active ? 0 : ''} id={0}></i></span>
+            <span className="is-size-6" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active ? 0 : ''} id={0}>Artistes</span>
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 1} id={1}>
-            <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active === 1} id={1}></i></span>
-            <span className="is-size-6" active={active === 1} id={1}>Studio</span>
+            <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>
+            <span className="is-size-6" active={active ? 1 : ''} id={1}>Studio</span>
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 2} id={2}>
-            <span className="icon"><i className="fas fa-play-circle" aria-hidden="true" active={active === 2} id={2}></i></span>
-            <span className="is-size-6" active={active === 2} id={2}>Beats</span>
+            <span className="icon"><i className="fas fa-play-circle" aria-hidden="true" active={active ? 2 : ''} id={2}></i></span>
+            <span className="is-size-6" active={active ? 2 : ''} id={2}>Beats</span>
           </TabMob>
         </Tabs>
         <div>
@@ -76,8 +76,8 @@ const Medias = ({ className }) => {
           {/*Prods*/}
           <Content className="has-text-centered" active={active === 2}>
             <div className="bc">
-              <iframe className="is-hidden-mobile" title="Beats by Louis" style={{ border: 0, width: '700px', height: '300px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=1171375659/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://septiemesens.bandcamp.com/album/beats-hip-hop-rap">Beats / Hip-Hop / Rap / by Septième Sens</a></iframe>
-              <iframe className="is-hidden-tablet has-text-centered" title="Beats by Louis" style={{ border: 0, width: '100%', height: '470px', marginTop: '1rem' }} src="https://bandcamp.com/EmbeddedPlayer/album=1171375659/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://septiemesens.bandcamp.com/album/beats-hip-hop-rap">Beats / Hip-Hop / Rap / by Septième Sens</a></iframe>
+              <iframe className="is-hidden-mobile" title="Beats by Louis" style={{ border: 0, width: '700px', height: '820px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1171375659/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://septiemesens.bandcamp.com/album/beats-hip-hop-rap">Beats / Hip-Hop / Rap / by Septième Sens</a></iframe>
+              <iframe className="is-hidden-tablet has-text-centered" title="Beats by Louis" style={{ border: 0, width: '100%', height: '470px' }} src="https://bandcamp.com/EmbeddedPlayer/album=1171375659/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://septiemesens.bandcamp.com/album/beats-hip-hop-rap">Beats / Hip-Hop / Rap / by Septième Sens</a></iframe>
             </div>
           </Content>
         </div>
