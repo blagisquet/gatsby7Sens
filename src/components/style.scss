@@ -67,18 +67,6 @@ $danger: $red;
 @media screen and (min-width: 1600px) and (max-width:1920px) {
   .twisted,
   .twisted-black {
-    &::before {
-      margin-top: -1px;
-      margin-bottom: -1px;
-      height: 126px;
-      display: block;
-      content: "";
-      background-image: url("../images/twistLeft.svg");
-      background-size: 100% 126px;
-    }
-  }
-  .twisted,
-  .twisted-black {
     &::after {
       margin-top: 350px;
       margin-bottom: -1px;
@@ -92,18 +80,6 @@ $danger: $red;
 }
 
 @media screen and (min-width: 1921px) and (max-width:1980px) {
-  .twisted,
-  .twisted-black {
-    &::before {
-      margin-top: -1px;
-      margin-bottom: -1px;
-      height: 126px;
-      display: block;
-      content: "";
-      background-image: url("../images/twistLeft.svg");
-      background-size: 100% 126px;
-    }
-  }
   .twisted,
   .twisted-black {
     &::after {
@@ -120,18 +96,6 @@ $danger: $red;
 
 //above 1940px
 @media screen and (min-width: 1981px) {
-  .twisted,
-  .twisted-black {
-    &::before {
-      margin-top: -1px;
-      margin-bottom: -1px;
-      height: 126px;
-      display: block;
-      content: "";
-      background-image: url("../images/twistLeft.svg");
-      background-size: 100% 126px;
-    }
-  }
   .twisted,
   .twisted-black {
     &::after {

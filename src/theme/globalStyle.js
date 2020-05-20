@@ -8,6 +8,7 @@ import 'sanitize.css/typography.css';
 const GlobalStyle = createGlobalStyle`
   ::selection {
     background: ${colors.black};
+    color: ${colors.white};
   }
 
   body {

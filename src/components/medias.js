@@ -110,4 +110,7 @@ export default styled(Medias)`
   .bc {
     margin-top: ${pxToRem(48)};
   }
+  i {
+    padding: 10px;
+  }
 `;
