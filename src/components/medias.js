@@ -38,7 +38,7 @@ const Medias = ({ className }) => {
         <Tabs className="has-text-centered is-hidden-mobile">
           <Tab className="tab" onClick={handleClick} active={active === 0} id={0}>
             <span className="icon 1"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active ? 0 : ''} id={0}></i></span>
-            <span className="is-size-4" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active ? 0 : ''} id={0}>Artistes</span>
+            <span className="is-size-4" active={active ? 0 : ''} id={0}>Artistes</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 1} id={1}>
             <span className="icon 1"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>
@@ -53,7 +53,7 @@ const Medias = ({ className }) => {
         <Tabs className="is-hidden-tablet">
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 0} id={0}>
             <span className="icon"><i className="fas fa-music" aria-hidden="true" onClick={handleClick} active={active ? 0 : ''} id={0}></i></span>
-            <span className="is-size-6" onClick={handleClick} role="button" tabIndex="0" onKeyDown={handleClick} active={active ? 0 : ''} id={0}>Artistes</span>
+            <span className="is-size-6" active={active ? 0 : ''} id={0}>Artistes</span>
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 1} id={1}>
             <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>

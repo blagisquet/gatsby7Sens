@@ -11,7 +11,7 @@ const Studio = ({ className }) => {
     <div className={className}>
       <section>
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Le studio</h2>
-        <div className="text is-size-5 has-text-justified">
+        <div className="text is-size-5 has-text-centered-desktop has-text-justified-touch">
           <p>
             Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
             </p>
@@ -31,7 +31,7 @@ const Studio = ({ className }) => {
       </section>
       <section className="hero image">
         {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
-          <div className="hero-body twisted">
+        <div className="hero-body twisted">
           <div className="container has-text-centered">
             {/* <p className="title is-2 has-text-centered"></p>
               <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
@@ -48,8 +48,20 @@ export default styled(Studio)`
     margin-top: ${pxToRem(48)};
     margin-bottom: ${pxToRem(24)}
   }
-  .text {
-    margin: 1rem 1rem;
+  @media screen and (max-width:1023px) {
+    .text {
+      margin: 1rem 1rem;
+    }
+  }
+  @media screen and (min-width:1024px) and (max-width:1939px) {
+    .text {
+      margin: 1rem 10rem;
+    }
+  }
+  @media screen and (min-width:1940px) {
+    .text {
+      margin: 1rem 25rem;
+    }
   }
   .image {
     background: url(${mix}) center/cover no-repeat;

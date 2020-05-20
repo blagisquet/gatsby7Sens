@@ -49,7 +49,7 @@ const Footer = ({ className }) => {
           </div>
         </div>
         <div className="is-hidden-tablet columns has-text-centered is-mobile">
-          <a className="column" href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
+          <a className="is-offset-1 column" href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
             <span className="icon is-small"><i className="fab fa-facebook fa-2x"></i></span>
           </a>
           <a className="column" href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
