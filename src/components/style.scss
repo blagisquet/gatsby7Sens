@@ -184,15 +184,33 @@ $danger: $red;
 
 //animation burger menu
 
+// .navbar div.show_list {
+//   height: auto;
+//   display: none;
+// }
+
+
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 .navTrigger {
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
+.navbar div.main_list a {
+  width: 100%;
+  height: 65px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:1023px) {
   .navTrigger {
-    display: block;
+      display: block;
+  }
+  .navbar div.show_list {
+      height: auto;
+      display: none;
   }
 }
 

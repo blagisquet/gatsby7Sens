@@ -19,18 +19,27 @@ const Navbar = ({ className }) => {
 							<img src={Logo} className="image" alt="logo du studio" />
 							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
 						</a>
-
-						<label htmlFor="nav-toggle-state" data-target="navbarBasicExample" role="presentation" onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
+						<span onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
 							<i></i>
 							<i></i>
 							<i></i>
-						</label>
+						</span>
 
 					</div>
-					<input type="checkbox" id="nav-toggle-state" />
-					<div id="navbarBasicExample" className={`navbar-menu has-background-grey-darker ${menuActive ? 'show_list' : ''}`}>
-						<div className="navbar-end">
-							<a href="#accueil" className="navbar-item is-size-5">Accueil</a>
+					<div className="navbar-end is-hidden-desktop">
+						<div id="mainListDiv" className={`main_list ${menuActive ? '' : 'show_list'}`}>
+
+							<a href="#accueil" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Accueil</a>
+							<a href="#studio" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Le studio</a>
+							<a href="#services" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Les services</a>
+							<a href="#medias" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Médias</a>
+							<a href="#avis" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Avis</a>
+							<a href="#map" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Nous trouver</a>
+							<a href="#contact" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Contact</a>
+						</div>
+					</div>
+					<div className="navbar-end is-hidden-touch">
+							<a href="#" className="navbar-item is-size-5">Accueil</a>
 							<a href="#studio" className="navbar-item is-size-5">Le studio</a>
 							<a href="#services" className="navbar-item is-size-5">Les services</a>
 							<a href="#medias" className="navbar-item is-size-5">Médias</a>
@@ -38,8 +47,35 @@ const Navbar = ({ className }) => {
 							<a href="#map" className="navbar-item is-size-5">Nous trouver</a>
 							<a href="#contact" className="navbar-item menu is-size-5">Contact</a>
 						</div>
-					</div>
 				</nav>
+
+				{/*test*/}
+				{/* <nav class="nav  has background-grey-darker">
+					<div class="container">
+						<div class="logo">
+						<a href="#accueil" className="navbar-item">
+							<img src={Logo} className="image" alt="logo du studio" />
+							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
+						</a>
+						</div>
+						<div id="mainListDiv" className={`main_list ${menuActive ? '' : 'show_list'}`}>
+							<ul class="navlinks">
+								<li><a href="#accueil" onClick={() => setMenuActive(!menuActive)}>Accueil</a></li>
+								<li><a href="#studio" onClick={() => setMenuActive(!menuActive)}>Le studio</a></li>
+								<li><a href="#services" onClick={() => setMenuActive(!menuActive)}>Les services</a></li>
+								<li><a href="#medias" onClick={() => setMenuActive(!menuActive)}>Médias</a></li>
+								<li><a href="#avis" onClick={() => setMenuActive(!menuActive)}>Avis</a></li>
+								<li><a href="#map" onClick={() => setMenuActive(!menuActive)}>Nous trouver</a></li>
+								<li><a href="#contact" onClick={() => setMenuActive(!menuActive)}>Contact</a></li>
+							</ul>
+						</div>
+						<span onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+					</div>
+				</nav> */}
 			</div>
 		</section>
 	);
@@ -52,14 +88,14 @@ export default styled(Navbar)`
 	section {
 		position: fixed;
 	}
-	#nav-toggle-state {
+	/* #nav-toggle-state {
   	display: none;
 	}
 
 	#nav-toggle-state:checked ~ .navbar-menu {
 		display: block;
 		animation: 0.3s ease-out;
-	}
+	} */
 
 	.menu-item {
 		margin-left: 2rem;
@@ -81,7 +117,9 @@ export default styled(Navbar)`
 		margin-right: 1rem;
 	}
 
-	.navbar-end {
-		margin-top: 0.3rem;
+	@media screen and (min-width:1024px) {
+		.navbar-end {
+		margin-top: 0.2rem !important;
+		}
 	}
 `;
