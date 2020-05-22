@@ -19,7 +19,7 @@ const Navbar = ({ className }) => {
 							<img src={Logo} className="image" alt="logo du studio" />
 							<p className="stud is-size-5 is-hidden-mobile is-hidden-desktop-only">Studio Septième Sens</p>
 						</a>
-						<span onClick={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
+						<span role="presentation" onClick={() => setMenuActive(!menuActive)} onKeyDown={() => setMenuActive(!menuActive)} className={`navTrigger ${menuActive ? 'active' : ""}`}>
 							<i></i>
 							<i></i>
 							<i></i>
@@ -39,7 +39,7 @@ const Navbar = ({ className }) => {
 						</div>
 					</div>
 					<div className="navbar-end is-hidden-touch">
-							<a href="#" className="navbar-item is-size-5">Accueil</a>
+							<a href="#accueil" className="navbar-item is-size-5">Accueil</a>
 							<a href="#studio" className="navbar-item is-size-5">Le studio</a>
 							<a href="#services" className="navbar-item is-size-5">Les services</a>
 							<a href="#medias" className="navbar-item is-size-5">Médias</a>

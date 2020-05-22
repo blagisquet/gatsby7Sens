@@ -16,15 +16,17 @@ const Footer = ({ className }) => {
             <figure className="image">
               <img src={logo} alt="logo studio septième sens" />
             </figure>
-            <a className="reseaux" href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
-              <span className="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
-            </a>
-            <a className="reseaux" href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
-              <span className="icon is-large"><i className="fab fa-instagram fa-2x"></i></span>
-            </a>
-            <a className="reseaux" href="https://twitter.com/studio7esens" target="_blank" rel="noopener noreferrer">
-              <span className="icon is-large"><i className="fab fa-twitter fa-2x"></i></span>
-            </a>
+            <div className="reseaux">
+              <a href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
+                <span className="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
+              </a>
+              <a href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
+                <span className="icon is-large"><i className="fab fa-instagram fa-2x"></i></span>
+              </a>
+              <a href="https://twitter.com/studio7esens" target="_blank" rel="noopener noreferrer">
+                <span className="icon is-large"><i className="fab fa-twitter fa-2x"></i></span>
+              </a>
+            </div>
           </div>
           <div className="column is-hidden-mobile">
             <a href="https://goo.gl/maps/NLDzBV8N3Qf8wB9E8" target="_blank" rel="noopener noreferrer" className="address">
@@ -103,6 +105,9 @@ export default styled(Footer)`
   .sept {
     margin-left: 1rem;
   }
+  .reseaux {
+    margin-left: 5%;
+  }
   .made {
     color: white;
     &:hover {
@@ -111,5 +116,15 @@ export default styled(Footer)`
   }
   .fa-music {
     color: white;
+  }
+  @media screen and (min-width:425px) and (max-width:574px) {
+    .menu {
+      margin-left: 5%;
+    }
+  }
+  @media screen and (min-width:575px) and (max-width:768px) {
+    .menu {
+      margin-left: 15%;
+    }
   }
 `;
