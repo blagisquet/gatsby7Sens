@@ -29,6 +29,7 @@ $danger: $red;
     /* Safari, Android, iOS */ url("../fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 
+//Twisted
 .twisted,
 .twisted-white,
 .twisted-black {
@@ -64,7 +65,7 @@ $danger: $red;
   }
 }
 
-@media screen and (min-width: 1600px) and (max-width:1920px) {
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
   .twisted,
   .twisted-black {
     &::after {
@@ -79,7 +80,7 @@ $danger: $red;
   }
 }
 
-@media screen and (min-width: 1921px) and (max-width:1980px) {
+@media screen and (min-width: 1921px) and (max-width: 1980px) {
   .twisted,
   .twisted-black {
     &::after {
@@ -195,13 +196,13 @@ $danger: $red;
   padding: 0;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .navTrigger {
-      display: block;
+    display: block;
   }
   .navbar div.show_list {
-      height: auto;
-      display: none;
+    height: auto;
+    display: none;
   }
 }
 
