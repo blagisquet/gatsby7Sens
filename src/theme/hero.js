@@ -7,7 +7,7 @@ const Hero = styled.div`
   background: url(${home}) top/cover no-repeat;
   background-attachment: fixed;
   @media (max-width:768px) {
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
 `;
 

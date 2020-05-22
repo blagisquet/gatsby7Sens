@@ -77,5 +77,6 @@ export default styled(Avis)`
   .carousel .control-dots {
     position: relative;
     margin: 0;
+    color: black !important;
   }
 `;
