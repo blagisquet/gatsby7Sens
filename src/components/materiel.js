@@ -13,7 +13,7 @@ const Materiel = ({ className }) => {
         <div className="column is-one-quarter">
         <ul>
           <li className="mat has-text-weight-bold is-size-4">Console / Preamps</li>
-          <li>DDA QII 32 in</li>
+          <li>DDA QII 32 inputs</li>
           <li>Universal audio Apollo Twin</li>
         </ul>
         <ul>
@@ -26,7 +26,7 @@ const Materiel = ({ className }) => {
         </div>
         <ul className="column is-one-quarter">
           <li className="mat has-text-weight-bold is-size-4">Logiciel / Plug-in</li>
-          <li>Pro Tools Ultimate 2020</li>
+          <li>Pro Tools Ultimate 2019</li>
           <li>Logic Pro X</li>
           <li>Ableton Live</li>
           <li>Hofa CD Burn DDP master</li>

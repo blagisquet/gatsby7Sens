@@ -12,20 +12,21 @@ const Footer = ({ className }) => {
     <div className={className}>
       <div className="container is-fluid has-background-grey-darker has-text-light">
         <div className="columns is-mobile">
-          <div className="column is-hidden-mobile sept">
+          <div className="column is-hidden-mobile has-text-centered sept">
             <figure className="image">
               <img src={logo} alt="logo studio septième sens" />
             </figure>
-            <div className="reseaux">
-              <a href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
+            <div className="reseaux columns">
+              <a href="https://www.facebook.com/studioseptiemesens/?ref=ts&fref=ts" className="column" target="_blank" rel="noopener noreferrer">
                 <span className="icon is-large"><i className="fab fa-facebook fa-2x"></i></span>
               </a>
-              <a href="https://www.instagram.com/studioseptiemesens/?hl=fr" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/studioseptiemesens/?hl=fr" className="column" target="_blank" rel="noopener noreferrer">
                 <span className="icon is-large"><i className="fab fa-instagram fa-2x"></i></span>
               </a>
-              <a href="https://twitter.com/studio7esens" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/studio7esens" className="column" target="_blank" rel="noopener noreferrer">
                 <span className="icon is-large"><i className="fab fa-twitter fa-2x"></i></span>
               </a>
+              <div className="column"></div>
             </div>
           </div>
           <div className="column is-hidden-mobile">
@@ -105,8 +106,14 @@ export default styled(Footer)`
   .sept {
     margin-left: 1rem;
   }
-  .reseaux {
-    margin-left: 5%;
+  .image {
+    @media (max-width: 1050px) {
+      margin-left: 25%;
+    }
+    @media (min-width: 1051px) and (max-width: 1200px) {
+      margin-left: 20%;
+    }
+    margin-left: 15%;
   }
   .made {
     color: white;

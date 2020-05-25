@@ -29,6 +29,19 @@ $danger: $red;
     /* Safari, Android, iOS */ url("../fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+//medias
+.load-more {
+  width: 18rem;
+}
+@media (min-width: 365px) {
+  .load-more {
+    width: 19rem;
+  }
+}
 //Twisted
 .twisted,
 .twisted-white,

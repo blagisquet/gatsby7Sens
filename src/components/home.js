@@ -26,9 +26,17 @@ export default styled(home)`
   span {
     position: absolute;
     top: 95vh;
-    left: 50%;
+    left: 49%;
     transform: scale(1);
     animation: pulse 5s ease infinite;
+    @media (min-width:501px) and (max-width: 768px){
+      top: 90vh;
+      left: 48%;
+    }
+    @media (max-width:500px) {
+      top: 90vh;
+      left: 46%;
+    }
   }
   .fas {
     color: white;

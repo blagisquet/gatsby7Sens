@@ -31,7 +31,7 @@ const Navbar = ({ className }) => {
 
 							<a href="#accueil" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Accueil</a>
 							<a href="#studio" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Le studio</a>
-							<a href="#services" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Les services</a>
+							<a href="#services" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Services</a>
 							<a href="#medias" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Médias</a>
 							<a href="#avis" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Avis</a>
 							<a href="#map" className="navbar-item is-size-5" onClick={() => setMenuActive(!menuActive)}>Nous trouver</a>
@@ -41,7 +41,7 @@ const Navbar = ({ className }) => {
 					<div className="navbar-end is-hidden-touch">
 						<a href="#accueil" className="navbar-item is-size-5">Accueil</a>
 						<a href="#studio" className="navbar-item is-size-5">Le studio</a>
-						<a href="#services" className="navbar-item is-size-5">Les services</a>
+						<a href="#services" className="navbar-item is-size-5">Services</a>
 						<a href="#medias" className="navbar-item is-size-5">Médias</a>
 						<a href="#avis" className="navbar-item is-size-5">Avis</a>
 						<a href="#map" className="navbar-item is-size-5">Nous trouver</a>
