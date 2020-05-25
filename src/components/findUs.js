@@ -3,7 +3,7 @@ import React from 'react';
 import { pxToRem } from '../theme/helpers';
 
 import map from '../images/map.png';
-import mapMob from '../images/mapMob.png';
+import mapMob from '../images/mapMob.jpg';
 
 import styled from 'styled-components';
 import './style.scss';
