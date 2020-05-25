@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'Studio Septième Sens',
 		author: 'Baptiste Lagisquet',
-		imageUrl: './src/images/logo.png',
+		imageUrl: 'src/images/logo.png',
 		description: 'Site du studio Septième Sens à Châteauroux',
 		keywords: `Studio, Septieme, Sens, Lagrillère, Lagisquet, Musique, Enregistrement, Mixage, Mastering, Chateauroux`,
 		instagram: 'https://www.instagram.com/studioseptiemesens/',
@@ -34,7 +34,7 @@ module.exports = {
 				background_color: '#FFFFFF',
 				theme_color: '#c80036',
 				display: 'standalone',
-				icon: './src/images/logosmall.png',
+				icon: 'src/images/logosmall.png',
 				orientation: 'portrait'
 			}
 		},
