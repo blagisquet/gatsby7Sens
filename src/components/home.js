@@ -30,11 +30,11 @@ export default styled(home)`
     transform: scale(1);
     animation: pulse 5s ease infinite;
     @media (min-width:501px) and (max-width: 768px){
-      top: 90vh;
+      top: 85vh;
       left: 48%;
     }
     @media (max-width:500px) {
-      top: 90vh;
+      top: 85vh;
       left: 46%;
     }
   }
