@@ -12,7 +12,7 @@ import { colors, pxToRem } from '../theme/helpers';
 import { Tabs, Tab, TabMob, Content } from '../theme/tab';
 
 const Medias = ({ className }) => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
   const handleClick = e => {
     const index = parseInt(e.target.id, 0);
     if (index !== active) {
@@ -42,7 +42,7 @@ const Medias = ({ className }) => {
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 1} id={1}>
             <span className="icon 1"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>
-            <span className="is-size-4" active={active ? 1 : ''} id={1}>Studio</span>
+            <span className="is-size-4" active={active ? 1 : ''} id={1}>Photos</span>
           </Tab>
           <Tab className="tab" onClick={handleClick} active={active === 2} id={2}>
             <span className="icon 1"><i className="fas fa-play-circle" aria-hidden="true" active={active ? 2 : ''} id={2}></i></span>
@@ -57,7 +57,7 @@ const Medias = ({ className }) => {
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 1} id={1}>
             <span className="icon"><i className="fas fa-image" aria-hidden="true" active={active ? 1 : ''} id={1}></i></span>
-            <span className="is-size-6" active={active ? 1 : ''} id={1}>Studio</span>
+            <span className="is-size-6" active={active ? 1 : ''} id={1}>Photos</span>
           </TabMob>
           <TabMob className="tab tabsMob" onClick={handleClick} active={active === 2} id={2}>
             <span className="icon"><i className="fas fa-play-circle" aria-hidden="true" active={active ? 2 : ''} id={2}></i></span>

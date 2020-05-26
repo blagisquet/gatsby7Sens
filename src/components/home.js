@@ -25,7 +25,7 @@ const home = ({ className }) => {
 export default styled(home)`
   span {
     position: absolute;
-    top: 95vh;
+    top: 92vh;
     left: 49%;
     transform: scale(1);
     animation: pulse 5s ease infinite;

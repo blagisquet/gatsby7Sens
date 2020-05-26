@@ -40,7 +40,7 @@ const Avis = ({ className }) => {
         <div className="tile is-ancestor">
           <div className="tile is-4 is-vertical is-parent">
             <div className="tile is-child box">
-              <p className="title is-size-5">Simon Vachet</p>
+              <p className="title is-size-5">Simon Vacher</p>
               <p>“ Très bon accueil, très professionnel. Un bon moment de convivialité et de musique !... “</p>
             </div>
             <div className="tile is-child box">
