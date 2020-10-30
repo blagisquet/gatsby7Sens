@@ -16,7 +16,7 @@ const Studio = ({ className }) => {
             Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
             </p>
           <p>
-            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, Louis, l’ingénieur du son, vous accueille dans des locaux de 45m2
+            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, Louis, l’ingénieur du son, vous accueille dans ses locaux
               composés d’une régie et de deux cabines <span className="has-text-weight-semibold">acoustiquement irréprochables</span>.
             </p>
           <p>
