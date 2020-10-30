@@ -58,7 +58,18 @@ const Avis = ({ className }) => {
           </div>
         </div>
       </Carousel>
-      <span id="map"></span>
+      <section className="hero image">
+        {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
+        <div className="hero-body twisted">
+          <div className="container has-text-centered">      
+            <h2 className="has-text-centered has-text-weight-bold h2 is-size-2">Partenaires</h2>
+
+            {/* <p className="title is-2 has-text-centered"></p>
+              <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
+          </div>
+        </div>
+        <span id="map"></span>
+      </section>
     </div>
   );
 }
@@ -68,6 +79,9 @@ export default styled(Avis)`
    margin-top: ${pxToRem(48)};
    margin-bottom: ${pxToRem(24)}
 }
+  .h2 {
+    margin-top: ${pxToRem(12)};
+  }
   .is-ancestor {
     margin: 0 1rem 1rem 1rem;
   }
@@ -78,5 +92,8 @@ export default styled(Avis)`
     position: relative;
     margin: 0;
     color: black !important;
+  }
+  .image {
+    background-color: lightgrey;
   }
 `;
