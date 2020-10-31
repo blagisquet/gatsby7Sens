@@ -58,14 +58,15 @@ const Avis = ({ className }) => {
           </div>
         </div>
       </Carousel>
-      {/* <section className="hero image">
+      <section className="hero image">
         <div className="hero-body twisted">
-          <div className="container has-text-centered">      
+          <div className="container has-text-centered columns">      
             <h2 className="has-text-centered has-text-weight-bold h2 is-size-2">Partenaires</h2>
+            <img className="column is-one-third" />
            </div>
         </div>
         <span id="map"></span>
-            </section> */}
+      </section>
       <span id="map"></span>
     </div>
   );
