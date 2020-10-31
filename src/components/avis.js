@@ -58,6 +58,14 @@ const Avis = ({ className }) => {
           </div>
         </div>
       </Carousel>
+      {/* <section className="hero image">
+        <div className="hero-body twisted">
+          <div className="container has-text-centered">      
+            <h2 className="has-text-centered has-text-weight-bold h2 is-size-2">Partenaires</h2>
+           </div>
+        </div>
+        <span id="map"></span>
+            </section> */}
       <span id="map"></span>
     </div>
   );
@@ -68,6 +76,9 @@ export default styled(Avis)`
    margin-top: ${pxToRem(48)};
    margin-bottom: ${pxToRem(24)}
 }
+  .h2 {
+    margin-top: ${pxToRem(12)};
+  }
   .is-ancestor {
     margin: 0 1rem 1rem 1rem;
   }
@@ -78,5 +89,8 @@ export default styled(Avis)`
     position: relative;
     margin: 0;
     color: black !important;
+  }
+  .image {
+    background-color: lightgrey;
   }
 `;

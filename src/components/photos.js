@@ -38,6 +38,9 @@ class Photos extends Component {
     return (
       <section className="contain">
         <div className="feed has-text-centered">
+          {/*<div className="tiles column has-text-centered" aria-live="polite">
+            <iframe className="studPic" src="https://www.facebook.com/studioseptiemesens/photos/a.1549128282016101/2703809029881348/"></iframe>
+    </div>*/} 
           <div className="tiles columns has-text-centered is-multiline" aria-live="polite">
             {this.state.pictures.slice(0, this.state.visible).map((picture, index) => {
               return (

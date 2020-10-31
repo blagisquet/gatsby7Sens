@@ -1,42 +1,47 @@
 [
   {
     "id": "1",
-    "url": "http://www.studioseptiemesens.fr/photos/pano1.png",
+    "url": "http://www.studioseptiemesens.fr/photos/studio.jpg",
     "alt": "Vue panoramique du studio"
   }, 
   {
-    "id": "7",
-    "url": "http://www.studioseptiemesens.fr/photos/enceintes.png",
-    "alt": "enceintes d'écoute Focal"
-  },
-  {
-    "id": "8",
-    "url": "http://www.studioseptiemesens.fr/photos/micro.png",
-    "alt": "Micro brauner phantera"
-  },
-  {
-    "id": "4",
-    "url": "http://www.studioseptiemesens.fr/photos/canap.png",
-    "alt": "Vue de l'arrière du studio avec le canapé"
-  },
-  {
-    "id": "5",
-    "url": "http://www.studioseptiemesens.fr/photos/cabine.png",
+    "id": "2",
+    "url": "http://www.studioseptiemesens.fr/photos/cabine.jpg",
     "alt": "Vue de la cabine d'enregistrement"
   },
   {
-    "id": "6",
-    "url": "http://www.studioseptiemesens.fr/photos/vuecabine.png",
-    "alt": "Vue depuis la cabine du studio"
-  },
-  {
-    "id": "2",
-    "url": "http://www.studioseptiemesens.fr/photos/pano2.png",
-    "alt": "Vue panoramique du studio"
-  },
-  {
     "id": "3",
-    "url": "http://www.studioseptiemesens.fr/photos/studio.png",
-    "alt": "Vue du studio avec la console de mix"
-  } 
+    "url": "http://www.studioseptiemesens.fr/photos/voix.jpg",
+    "alt": "Vue de la cabine de prise de voix"
+  },
+  {
+    "id": "4",
+    "url": "http://www.studioseptiemesens.fr/photos/digidesign.jpg",
+    "alt": "Vue de la console Digidesign C24"
+  },
+  {
+    "id": "5",
+    "url": "http://www.studioseptiemesens.fr/photos/micro.jpg",
+    "alt": "Vue de l'ingénieur du son devant un micro"
+  },
+  {
+    "id": "6",
+    "url": "http://www.studioseptiemesens.fr/photos/mixage.jpg",
+    "alt": "Vue d'une partie du matériel de mixage"
+  },
+  {
+    "id": "7",
+    "url": "http://www.studioseptiemesens.fr/photos/reamp.jpg",
+    "alt": "Vue d'une partie du matériel de Backline"
+  },
+  {
+    "id": "8",
+    "url": "http://www.studioseptiemesens.fr/photos/protools.jpg",
+    "alt": "Vue de la console et du logiciel de montage mixage"
+  },
+  {
+    "id": "9",
+    "url": "http://www.studioseptiemesens.fr/photos/4way.jpg",
+    "alt": "4way headphone amp"
+  }
 ]
