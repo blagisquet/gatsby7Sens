@@ -58,18 +58,15 @@ const Avis = ({ className }) => {
           </div>
         </div>
       </Carousel>
-      <section className="hero image">
-        {/* <div className={theme === 'dark' ? 'hero-body twisted-black' : 'hero-body twisted-white'}> */}
+      {/* <section className="hero image">
         <div className="hero-body twisted">
           <div className="container has-text-centered">      
             <h2 className="has-text-centered has-text-weight-bold h2 is-size-2">Partenaires</h2>
-
-            {/* <p className="title is-2 has-text-centered"></p>
-              <button className="button is-danger is-medium is-fullwidth-mobile"><Link to="#medias" className="has-text-light">Voir +</Link></button> */}
-          </div>
+           </div>
         </div>
         <span id="map"></span>
-      </section>
+            </section> */}
+      <span id="map"></span>
     </div>
   );
 }
