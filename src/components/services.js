@@ -18,11 +18,13 @@ const Services = ({ className }) => {
       <div className="columns has-text-centered services">
         <div className="column">
           <img src={record} alt="enregistrement" />
-          <p className="is-size-4 serv has-text-weight-bold">Enregistrement</p>
+          <p className="is-size-4 serv has-text-weight-bold">Tarif horaire <br /> (avec ingénieur du son)</p>
           <div className="is-size-5">
-            <p className="has-text-weight-bold">à partir de 30€/h<br />
-              ½ journée (4h) : 120€<br />
-              1 journée (8h) : 200€<br />
+            <p className="has-text-weight-bold">à partir de 40€/h<br />
+              ½ journée (4h) : 140€<br />
+              1 journée (8h) : 240€<br />
+              Forfait 5 jours : 1080€<br />
+              Forfait 10 jours 2130€<br />
             </p>
             <p>Re-recording (instrument par instrument) ou live (par sections d’instruments)</p>
           </div>
@@ -40,8 +42,12 @@ const Services = ({ className }) => {
           <img src={mastering} alt="mastering" />
           <p className="is-size-4 serv has-text-weight-bold">Mastering</p>
           <div className="is-size-5">
-            <p className="has-text-weight-bold">stéréo : 42€/titre <br />
-          stems : 78€/titre</p>
+            <p className="has-text-weight-bold">Mastering stéréo: 45€/titre <br />
+            Cette étape est réalisée par un studio de mastering partenaire extérieur.<br />
+          Mastering 2 stems (travail sur 2 sous-groupes : instru et voix): 60€/titre<br />
+          Mastering 8 stems (travail sur 8 sous-groupes maximum de sections d’instruments):
+80€ /titre
+</p>
             <p>Cette dernière étape cruciale fait entrer vos productions dans les normes d’écoute et de diffusion,
             pour une sortie digitale ou en vue d’une fixation sur un support.</p>
             <p>Possibilité de e-mastering (à distance).</p>
@@ -51,9 +57,10 @@ const Services = ({ className }) => {
           <img src={rapper} alt="rap" />
           <p className="is-size-4 serv has-text-weight-bold">Forfait Rap / Cover</p>
           <div className="is-size-5">
-            <p className="has-text-weight-bold">instru stéréo : 170€/titre <br />
-          instru multipiste : 200€/titre</p>
-            <p>L'artiste apporte le fichier instrumental sur clé USB au format .wav.</p>
+            <p className="has-text-weight-bold">instru stéréo : 180€/titre <br />
+          instru multipiste : 220€/titre</p>
+            <p>L'artiste apporte le fichier instrumental sur clé USB au format WAV (nous recommandons d’éviter le MP3).
+</p>
           </div>
         </div>
         <span id="materiel"></span>

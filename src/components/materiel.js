@@ -28,7 +28,9 @@ const Materiel = ({ className }) => {
             <li>Electrovoice RE20</li>
             <li>Sennheiser MD421(x2)</li>
             <li>Beyerdynamic M88</li>
-            <li>Audix D4</li>
+            <li>Audix D4-D6</li>
+            <li>Audio-Technica AE3000</li>
+            <li>Rupert Neve Designs RNDI</li>
             <li>Shure SM57(x6)/Beta57/Beta52/Beta91</li>
             <li>DI BSS AR133(x10)</li>
             <li>Radial Pro-RMP reamper</li>
@@ -37,13 +39,14 @@ const Materiel = ({ className }) => {
         <div className="column is-one-third">
           <ul>
             <li className="mat has-text-weight-bold is-size-4">Logiciel / Plug-in</li>
-            <li>Pro Tools Ultimate 2020</li>
+            <li>Pro Tools Ultimate 2021</li>
             <li>Logic Pro X</li>
             <li>Ableton Live</li>
             <li>Hofa CD Burn DDP master</li>
             <li></li>
             <li>Plug-ins UAD SSL/Pultec/Teletronix/...</li>
             <li>Plug-ins WAVES Kramer/C1/C4/H-serie/R-serie/...</li>
+            <li>Plug-ins FabFilter, Soundtoys, Valhalla, iZotope...</li>
             <li>Melodyne Assistant</li>
             <li>Antares Autotune pro</li>
           </ul>
@@ -61,7 +64,7 @@ const Materiel = ({ className }) => {
         <ul>
           <li className="mat has-text-weight-bold is-size-4">Monitoring</li>
             <li>Focal SM9</li>
-            <li>Yamaha HS8</li>
+            <li>Auratone 5C Super Sound Cube Classic</li>
             <li>Casque Beyerdynamic DT770 pro(x3)</li>
             <li>ART Headamp 6 Pro</li>
             <li>Mackie HM-4 4-way headphone amp</li>
