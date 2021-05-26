@@ -16,16 +16,14 @@ const Studio = ({ className }) => {
             Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
             </p>
           <p>
-            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, Louis, l’ingénieur du son, vous accueille dans ses locaux
-              composés d’une régie et de deux cabines <span className="has-text-weight-semibold">acoustiquement irréprochables</span>.
+            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, vous êtes accueillis dans un environnement professionnel constitué d’une régie séparée de deux cabines <span className="has-text-weight-semibold"> à l’acoustique soignée.</span>
+          </p>
+          <p>
+            Enregistrement live, instrument par instrument (re-recording), captation extérieure : le studio s’adapte à vos besoins et à <span className="has-text-weight-semibold">tous les styles</span>.
             </p>
           <p>
-            Enregistrement live, instrument par instrument (re-recording), cover, création de jingle, publicités d’entreprise,
-            captation de concert, le studio s’adapte à vos besoins et à <span className="has-text-weight-semibold">tous les styles</span>.
-            </p>
-          <p>
-            Grâce à un équipement <span className="has-text-weight-semibold">haut de gamme et dernier cri</span>, tout est mis en œuvre pour créer un confort de travail à la hauteur de vos exigences.
-              Les <span className="has-text-weight-semibold">tarifs avantageux</span> assurent l’accès à un enregistrement professionnel pour toutes et tous, et les sessions sont aménageables selon vos habitudes et vos envies.
+            L’équipement <span className="has-text-weight-semibold">haut de gamme </span>constamment mis à jour assure un confort de travail à la hauteur de vos exigences.
+              Les <span className="has-text-weight-semibold">tarifs avantageux</span> donnent accès à un enregistrement professionnel pour toutes et tous, et les sessions sont aménageables selon vos habitudes et vos envies.
             </p>
         </div>
       </section>
