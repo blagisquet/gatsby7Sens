@@ -43,14 +43,10 @@ const Services = ({ className }) => {
           <p className="is-size-4 serv has-text-weight-bold">Mastering</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">Mastering stéréo: 45€/titre <br />
-            Cette étape est réalisée par un studio de mastering partenaire extérieur.<br />
-          Mastering 2 stems (travail sur 2 sous-groupes : instru et voix): 60€/titre<br />
-          Mastering 8 stems (travail sur 8 sous-groupes maximum de sections d’instruments):
-80€ /titre
+          Mastering 2 stems (sur 2 sous-groupes : instru et voix): 60€/titre<br />
+          Mastering 8 stems (sur 8 sous-groupes maximum de sections d’instruments): 80€/titre
 </p>
-            <p>Cette dernière étape cruciale fait entrer vos productions dans les normes d’écoute et de diffusion,
-            pour une sortie digitale ou en vue d’une fixation sur un support.</p>
-            <p>Possibilité de e-mastering (à distance).</p>
+            <p>Cette étape est réalisée par un studio de mastering partenaire extérieur.</p>
           </div>
         </div>
         <div className="column">
