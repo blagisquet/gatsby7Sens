@@ -55,7 +55,7 @@ const Materiel = ({ className }) => {
             <li>Avid Pro Tools HDX 16x16 system</li>
             <li>Apple Mac Pro 2014</li>
             <li>Hexacoeur à 3,5Ghz avec 12Mo de cache N3</li>
-            <li>32 Go de mémoire DDR3 à 1866Mhz</li>
+            <li>64 Go (4 x 16 Go) de mémoire ECC DDR3 à 1866Mhz</li>
             <li>Disque SSD 512 Go</li>
             <li>Magma châssis Thunderbolt ExpressBox 3T</li>
           </ul>

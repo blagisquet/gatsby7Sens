@@ -30,10 +30,10 @@ const Contact = ({ className }) => {
                 <h4 className="title is-4">Email</h4>
               </div>
               <div className="column has-text-right">
-                <button className="button btn is-danger is-outlined is-fullwidth" href="mailto:studio@sensduspectacle.com">
+                <button className="button btn is-danger is-outlined is-fullwidth" target="_top" href="mailto:contact@studioseptiemesens.fr">
                   <span className="icon is-medium ">
                     <i className="icons fas fa-envelope"></i>
-                  </span>studio@sensduspectacle.com</button>
+                  </span>contact@studioseptiemesens.fr</button>
               </div>
             </div>
           </div>
