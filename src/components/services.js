@@ -44,12 +44,11 @@ const Services = ({ className }) => {
             <p className="has-text-weight-bold">200€ par titre* </p>
             <p>Nettoyage et édition des pistes <br />
             Correction des notes <br />
-            Mixage comple <br />
-            Démo | Maquette | Pré-prod <br />
+            Mixage complet <br />
             *Tarif évolutif en fonction du nombre de pistes <br />
             Single | EP | Album
             </p>
-            <p>Possibilité de mixage à distance si vous avez enregistré dans un autre studio</p>
+            <p>Possibilité de mixage à distance si vous avez enregistré dans un autre studio.</p>
           </div>
         </div>
         <div className="column">
@@ -62,8 +61,9 @@ const Services = ({ className }) => {
             <p className="serv">Cette étape est réalisée par un studio de mastering partenaire extérieur ou celui de votre choix.</p>
              <p className="has-text-weight-bold">Location du studio <br />
             (avec assistant)</p>
-            <p className="has-text-weight-bold">30€ par heure</p>
-            <p>Pour tout projet d'enregistrement avec un ingénieur du son extérieur au studio, merci de nous contacter</p>       
+            <p className="has-text-weight-bold">30€ par heure <br />
+            Journée : 240€</p>
+            <p>Pour tout projet d'enregistrement avec un ingénieur du son extérieur au studio, merci de nous contacter.</p>       
           </div>
         </div>
         <div className="column">
@@ -71,7 +71,7 @@ const Services = ({ className }) => {
           <p className="is-size-4 serv has-text-weight-bold">Enregistrement concerts</p>
           <div className="is-size-5">
             <p className="has-text-weight-bold">Forfait 800€</p>
-            <p>Nous connectons notre enregistreur 32 pistes aux sorties de la table de mixage de sonorisation sur place : chaque instrument est enregistré séparément. Nous procédons ensuite à 2 jours de mixage au studio. </p>
+            <p>Nous connectons notre enregistreur aux sorties de la table de mixage de sonorisation sur place : chaque instrument est enregistré séparément. Nous procédons ensuite à 2 jours de mixage au studio. </p>
             <p className="serv">Pour des enregistrements de concerts d'orchestres acoustiques non sonorisés, merci de nous contacter.</p>
           </div>
         </div>
