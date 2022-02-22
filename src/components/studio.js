@@ -13,13 +13,13 @@ const Studio = ({ className }) => {
         <h2 className="is-size-2 has-text-centered has-text-weight-bold">Le studio</h2>
         <div className="text is-size-5 has-text-centered-desktop has-text-justified-touch">
           <p>
-            Le Studio Septième Sens réalise l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
+            Le Studio Septième Sens vous accompagne sur l’ensemble des étapes de votre enregistrement audio : <span className="has-text-weight-semibold">prise de son, mixage, mastering</span>.
             </p>
           <p>
-            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, vous êtes accueillis dans un environnement professionnel constitué d’une régie séparée de deux cabines <span className="has-text-weight-semibold"> à l’acoustique soignée.</span>
+            En plein cœur de <span className="has-text-weight-semibold">Châteauroux</span>, vous êtes accueillis dans un environnement professionnel composé d’une régie séparée de deux cabines <span className="has-text-weight-semibold"> à l’acoustique soignée.</span>
           </p>
           <p>
-            Enregistrement live, instrument par instrument (re-recording), captation extérieure : le studio s’adapte à vos besoins et à <span className="has-text-weight-semibold">tous les styles</span>.
+            Enregistrement au studio (live, instrument par instrument (re-recording)), captation extérieure (concert amplifié, orchestre acoustique) : le studio s’adapte à vos besoins et à <span className="has-text-weight-semibold">tous les styles</span>.
             </p>
           <p>
             L’équipement <span className="has-text-weight-semibold">haut de gamme </span>constamment mis à jour assure un confort de travail à la hauteur de vos exigences.
